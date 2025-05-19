@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head prefix="og: http://ogp.me/ns">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,user-scalable=no,maximum-scale=1" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="keywords" content="●サイトの検索キーワード●" />
+<meta name="description" content="●サイトの検索説明●" />
+<title>●サイトのタイトル●</title>
+<meta property="og:url" content="●ページの URL●" />
+<meta property="og:type" content="●ページの種類●website article" />
+<meta property="og:title" content="●ページの タイトル●" />
+<meta property="og:description" content="●ページの説明文●" />
+<meta property="og:site_name" content="●サイト名●" />
+<meta property="og:image" content="●サムネイル画像のURL●" />
+<meta name="apple-mobile-web-app-title" content="●iOS表示名●" />
+<meta name="author" content="●作者名●" />
+<link rel="apple-touch-icon" href="iphone.png">
+<link rel="stylesheet" href="css/import.css" media="all" />
+
+<!-- Googleフォント -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&family=Kaisei+Tokumin:wght@500;700;800&family=Lato:wght@900&family=Noto+Sans+JP:wght@200;400;500;800;900&family=Shippori+Mincho:wght@700&display=swap" rel="stylesheet">
+<!-- フォントプラス -->
+<script src="https://webfont.fontplus.jp/accessor/script/fontplus.js?gUwfYWZ-iOk%3D&box=aVkPVMJgt3M%3D&aa=1&ab=2"></script>
+
+</head>
+
+<body class="page">
+
+
+<div id="wrapper">
+	<header id="header" class="clearfix">
+		<!--<div id="pageTopFix">-->
+			<div class="inBase clearfix">
+				<div class="header__siteTitleBox">
+					<h1 class="header__siteTitle"><a href="<?php echo home_url(); ?>"><img src="img/common/siteTitle.svg" alt="ふじやグループ -SINCE1933-" /></a></h1>
+				<!-- /.header__siteTitleBox --></div>
+
+				<nav class="globalNavi">
+					<ul class="globalNavi__menu__main clearfix">
+						<li><a href="<?php echo home_url(); ?>/about"><figure><img src="img/common/naviIconGroup.png" alt="ふじやグループについて" /></figure><span>ふじやグループについて</span></a>
+				            <ul class="globalNavi__menu__sub">
+								<li><a href="<?php echo home_url(); ?>/about/guest">お客様へ</a></li>
+								<li><a href="<?php echo home_url(); ?>/about/staff">スタッフへ</a></li>
+								<li><a href="<?php echo home_url(); ?>/about/client">お取引先様へ</a></li>
+								<li><a href="<?php echo home_url(); ?>/about/introduction">スタッフ紹介</a></li>
+							</ul> 
+			            </li>
+						<li><a href="<?php echo home_url(); ?>/information"><figure><img src="img/common/naviIconCompany.png" alt="企業情報" /></figure><span>企業情報</span></a>
+				            <ul class="globalNavi__menu__sub">
+								<li><a href="<?php echo home_url(); ?>/information/idea">経営理念・ビジョン</a></li>
+								<li><a href="<?php echo home_url(); ?>/information/message">社長・専務メッセージ</a></li>
+								<li><a href="<?php echo home_url(); ?>/information/service">事業内容</a></li>
+								<li><a href="<?php echo home_url(); ?>/information/company">会社概要</a></li>
+								<li><a href="<?php echo home_url(); ?>/">ふじや動画集</a></li>
+							</ul> 
+			            </li>
+						<li><a href="<?php echo home_url(); ?>/shop"><figure><img src="img/common/naviIconShop.png" alt="店舗紹介" /></figure><span>店舗紹介</span></a></li>
+						<li><a href="<?php echo home_url(); ?>/recruit"><figure><img src="img/common/naviIconRecruit.png" alt="採用情報" /></figure><span>採用情報</span></a></li>
+					</ul>
+			    <!-- /.globalNavi --></nav>
+			<!-- /.inBase --></div>
+		<!-- /#pageTopFix --</div>-->
+		
+			<nav class="globalNaviSmall">
+				<div id="globalNaviSmallIcon" class="globalNaviSmall__icon globalNaviSmall__icon--type01">
+					<div class="globalNaviSmall__iconButton">
+						<span class="iconButton--top"></span>
+						<span class="iconButton--middle"></span>
+						<span class="iconButton--bottom"></span>
+					</div>
+				</div>
+
+				<div class="modal micromodal-slide" id="modal-globalNaviSmall" aria-hidden="true">
+					<div class="modal__overlay" tabindex="-1" data-micromodal-close>
+				    		<div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-globalNaviSmall-labelledby">
+
+							<div class="globalNaviSmall__menu" id="modal-globalNaviSmall-labelledby">
+								<div class="globalNaviSmall__menu__inner">
+									<div class="globalNaviSmall__menu__main">
+										<div class="globalNaviSmall__menu__head">
+											<div class="globalNaviSmall__menu__siteTitle"><img src="img/common/siteTitle.svg" alt="ふじやグループ -SINCE1933-" /></div>
+											<p>〒662-0832<br>
+												兵庫県西宮市甲風園1丁目5-18 スギモトビル3F</p>
+											<div class="globalNaviSmall__menu__headButton"><a href="<?php echo home_url(); ?>">ホーム</a><!-- /.globalNaviSmall__menu__headButton --></div>
+										<!-- /.globalNaviSmall__menu__head --></div>
+
+										<div class="globalNaviSmall__menu__buttonGroupBox">
+											<div class="globalNaviSmall__menu__buttonGroup"><a href="<?php echo home_url(); ?>/about">
+												<figure><img src="img/common/naviIconGroup.png" alt="ふじやグループについて" /></figure>
+												<span>ふじやグループについて</span>
+											</a><!-- /.globalNaviSmall__menu__buttonGroup --></div>
+											<ul>
+												<li><a href="<?php echo home_url(); ?>/about/guest">お客様へ</a></li>
+												<li><a href="<?php echo home_url(); ?>/about/staff">スタッフへ</a></li>
+												<li><a href="<?php echo home_url(); ?>/about/client">お取引先様へ</a></li>
+												<li><a href="<?php echo home_url(); ?>/about/introduction">スタッフ紹介</a></li>
+											</ul> 
+										<!-- /.globalNaviSmall__menu__buttonGroupBox --></div>
+										<ul class="globalNaviSmall__menu__buttonList">
+											<li><a href="<?php echo home_url(); ?>/information"><figure><img src="img/common/naviIconCompany.png" alt="企業情報" /></figure><span>企業情報</span></a></li>
+											<li><a href="<?php echo home_url(); ?>/shop"><figure><img src="img/common/naviIconShop.png" alt="店舗紹介" /></figure><span>店舗紹介</span></a></li>
+											<li><a href="<?php echo home_url(); ?>/recruit"><figure><img src="img/common/naviIconRecruit.png" alt="採用情報" /></figure><span>採用情報</span></a></li>
+										</ul>
+									<!-- /.globalNaviSmall__menu__main --></div>
+								<!-- /.globalNaviSmall__menu__inner --></div>
+							<!-- /.globalNaviSmall__menu --></div>
+
+				    		<!-- /.modal__container --></div>
+					<!-- /.modal__overlay --></div>
+				<!-- /#modal-globalNaviSmall --></div>
+		    <!-- /.globalNaviSmall --></nav>
+
+		    
+	<!-- /#header --></header>
+    
+    <div class="pageTitleBox sM-s">
+	<div class="pageTitle">
+		<div class="inBase clearfix">
+			<h1>スタッフ紹介</h1>
+		<!-- /.inBase --></div>
+	<!-- /.pageTitle --></div>
+    <!-- /.pageTitleBox --></div>
+	
+	<div id="contents" class="clearfix">
+		<div class="inBase clearfix">
+			<div class="topicpath sM">
+				<ul>
+				    <li><a href="index.html">ホーム</a></li>
+				    <li>スタッフ紹介</li>
+				</ul>
+			<!-- /.topicpath --></div>
+
+			<div id="introductionStaffTitle">
+				<p class="introductionCategory__title --category00"><span class="allCategory" id="buttonStaffCategory00">みんな</span></p>
+			<!-- /#introductionStaffTitle --></div>
+
+			<ul id="introductionStaffNavi" class="introductionCategory__navi">
+				<!--<li class="introductionCategory--categoryButton00"><span id="buttonStaffCategory00">みんな</span></li>-->
+				<li class="introductionCategory--categoryButton01"><span id="buttonStaffCategory01"><small>居酒屋</small>ふじや本店</span></li>
+				<li class="introductionCategory--categoryButton02"><span id="buttonStaffCategory02"><small>炭火と酒</small>千本鶏</span></li>
+				<li class="introductionCategory--categoryButton03"><span id="buttonStaffCategory03"><small>アイリッシュカフェ&レストラン</small>カプリシカ</span></li>
+				<li class="introductionCategory--categoryButton04"><span id="buttonStaffCategory04"><small>やきとり専門店</small>鳥半 本店</span></li>
+				<li class="introductionCategory--categoryButton05"><span id="buttonStaffCategory05"><small>やきとり専門店</small>鳥半 阪神西宮店</span></li>
+			</ul>
+
+
+			<div id="introductionStaffBox" class="allCategory">
+				<div class="introductionStaffBox__staff --category04">
+					<a href="img/introduction/imgStaff-profile01.png" class="luminous is-notMovePage"><img src="img/introduction/imgStaff-thum01.png" alt="" /><span><img src="img/introduction/imgUchiwa01.png" alt="" /></span></a>
+				<!-- /.introductionStaffBox__staff --></div>
+				<div class="introductionStaffBox__staff --category02 --category03">
+					<a href="img/introduction/imgStaff-profile02.png" class="luminous is-notMovePage"><img src="img/introduction/imgStaff-thum02.png" alt="" /><span><img src="img/introduction/imgUchiwa02.png" alt="" /></span></a>
+				<!-- /.introductionStaffBox__staff --></div>
+				<div class="introductionStaffBox__staff --category01">
+					<a href="img/introduction/imgStaff-profile03.png" class="luminous is-notMovePage"><img src="img/introduction/imgStaff-thum03.png" alt="" /><span><img src="img/introduction/imgUchiwa03.png" alt="" /></span></a>
+				<!-- /.introductionStaffBox__staff --></div>
+				<div class="introductionStaffBox__staff --category02 --category03">
+					<a href="img/introduction/imgStaff-profile04.png" class="luminous is-notMovePage"><img src="img/introduction/imgStaff-thum04.png" alt="" /><span><img src="img/introduction/imgUchiwa04.png" alt="" /></span></a>
+				<!-- /.introductionStaffBox__staff --></div>
+				<div class="introductionStaffBox__staff --category01">
+					<a href="img/introduction/imgStaff-profile05.png" class="luminous is-notMovePage"><img src="img/introduction/imgStaff-thum05.png" alt="" /><span><img src="img/introduction/imgUchiwa05.png" alt="" /></span></a>
+				<!-- /.introductionStaffBox__staff --></div>
+				<div class="introductionStaffBox__staff --category04">
+					<a href="img/introduction/imgStaff-profile06.png" class="luminous is-notMovePage"><img src="img/introduction/imgStaff-thum06.png" alt="" /><span><img src="img/introduction/imgUchiwa06.png" alt="" /></span></a>
+				<!-- /.introductionStaffBox__staff --></div>
+				<div class="introductionStaffBox__staff --category05">
+					<a href="img/introduction/imgStaff-profile07.png" class="luminous is-notMovePage"><img src="img/introduction/imgStaff-thum07.png" alt="" /><span><img src="img/introduction/imgUchiwa07.png" alt="" /></span></a>
+				<!-- /.introductionStaffBox__staff --></div>
+				<div class="introductionStaffBox__staff --category01">
+					<a href="img/introduction/imgStaff-profile08.png" class="luminous is-notMovePage"><img src="img/introduction/imgStaff-thum08.png" alt="" /><span><img src="img/introduction/imgUchiwa08.png" alt="" /></span></a>
+				<!-- /.introductionStaffBox__staff --></div>
+				<div class="introductionStaffBox__staff --category02">
+					<a href="img/introduction/imgStaff-profile09.png" class="luminous is-notMovePage"><img src="img/introduction/imgStaff-thum09.png" alt="" /><span><img src="img/introduction/imgUchiwa09.png" alt="" /></span></a>
+				<!-- /.introductionStaffBox__staff --></div>
+				<div class="introductionStaffBox__staff --category01">
+					<a href="img/introduction/imgStaff-profile10.png" class="luminous is-notMovePage"><img src="img/introduction/imgStaff-thum10.png" alt="" /><span><img src="img/introduction/imgUchiwa10.png" alt="" /></span></a>
+				<!-- /.introductionStaffBox__staff --></div>
+				<div class="introductionStaffBox__staff --category04">
+					<a href="img/introduction/imgStaff-profile11.png" class="luminous is-notMovePage"><img src="img/introduction/imgStaff-thum11.png" alt="" /><span><img src="img/introduction/imgUchiwa11.png" alt="" /></span></a>
+				<!-- /.introductionStaffBox__staff --></div>
+				<div class="introductionStaffBox__staff --category01">
+					<a href="img/introduction/imgStaff-profile12.png" class="luminous is-notMovePage"><img src="img/introduction/imgStaff-thum12.png" alt="" /><span><img src="img/introduction/imgUchiwa12.png" alt="" /></span></a>
+				<!-- /.introductionStaffBox__staff --></div>
+				<div class="introductionStaffBox__staff --category01">
+					<a href="img/introduction/imgStaff-profile13.png" class="luminous is-notMovePage"><img src="img/introduction/imgStaff-thum13.png" alt="" /><span><img src="img/introduction/imgUchiwa13.png" alt="" /></span></a>
+				<!-- /.introductionStaffBox__staff --></div>
+				<div class="introductionStaffBox__staff --category04">
+					<a href="img/introduction/imgStaff-profile14.png" class="luminous is-notMovePage"><img src="img/introduction/imgStaff-thum14.png" alt="" /><span><img src="img/introduction/imgUchiwa14.png" alt="" /></span></a>
+				<!-- /.introductionStaffBox__staff --></div>
+				<div class="introductionStaffBox__staff --category05">
+					<a href="img/introduction/imgStaff-profile15.png" class="luminous is-notMovePage"><img src="img/introduction/imgStaff-thum15.png" alt="" /><span><img src="img/introduction/imgUchiwa15.png" alt="" /></span></a>
+				<!-- /.introductionStaffBox__staff --></div>
+				<div class="introductionStaffBox__staff --category01">
+					<a href="img/introduction/imgStaff-profile16.png" class="luminous is-notMovePage"><img src="img/introduction/imgStaff-thum16.png" alt="" /><span><img src="img/introduction/imgUchiwa16.png" alt="" /></span></a>
+				<!-- /.introductionStaffBox__staff --></div>
+				<div class="introductionStaffBox__staff --category05">
+					<a href="img/introduction/imgStaff-profile17.png" class="luminous is-notMovePage"><img src="img/introduction/imgStaff-thum17.png" alt="" /><span><img src="img/introduction/imgUchiwa17.png" alt="" /></span></a>
+				<!-- /.introductionStaffBox__staff --></div>
+				<div class="introductionStaffBox__staff --category02">
+					<a href="img/introduction/imgStaff-profile18.png" class="luminous is-notMovePage"><img src="img/introduction/imgStaff-thum18.png" alt="" /><span><img src="img/introduction/imgUchiwa18.png" alt="" /></span></a>
+				<!-- /.introductionStaffBox__staff --></div>
+			<!-- /.introductionStaffBox --></div>
+
+
+
+
+
+
+
+		<!-- /.inBase --></div>
+	<!-- /#contents --></div>
+
+	
+
+	<div class="bottomContactBox">
+		<div class="inBase clearfix">
+			<div class="bottomContactBox__titleBox">
+				<h3 class="bottomContactBox__title">採用情報</h3>
+				<p>ふじやグループで一緒に働いてみませんか？</p>
+			<!-- /.bottomContactBox__titleBox --></div>
+			<div class="bottomContactBox__buttonBox">
+				<div class="button--type04"><a href="/recruit">正社員募集</a></div>
+				<div class="button--type04"><a href="/parttime">アルバイト募集</a></div>
+			<!-- /.bottomContactBox__buttonBox --></div>
+		<!-- /.inBase --></div>
+	<!-- /.bottomContactBox --></div>
+
+	
+	<footer id="footer" class="--typeScrollFadeIn">
+		<div class="inBase clearfix">
+        	<div class="row">
+            	<div class="col-12 col-md-6 sM">
+	           		<dl class="footer__information">
+						<dt class="footer__information__siteTitle">
+							<img src="img/common/siteTitle_w.svg" alt="ふじやグループ -SINCE1933-" class="isPC" />
+							<img src="img/common/siteTitle_o2.svg" alt="ふじやグループ -SINCE1933-" class="isSP" />
+						</dt>
+						<dd class="footer__information__sent">〒662-0832<br>
+						兵庫県西宮市甲風園1丁目5-18 スギモトビル3F</dd>
+					</dl>
+                <!-- /.col --></div>
+            	<div class="col-12 col-md-6 sM">
+            		<div class="footer__navi clearfix">
+            			<div class="footer__navi__inner">
+							<ul>
+								<li class="--type01"><a href="<?php echo home_url(); ?>/about">ふじやグループについて</a></li>
+								<li><a href="<?php echo home_url(); ?>/about/guest">お客様へ</a></li>
+								<li><a href="<?php echo home_url(); ?>/about/staff">スタッフへ</a></li>
+					            <li><a href="<?php echo home_url(); ?>/about/client">お取引様へ</a></li>
+					            <li><a href="<?php echo home_url(); ?>/about/introduction">スタッフ紹介</a></li>
+							</ul>
+							<ul>
+								<li class="--type01"><a href="<?php echo home_url(); ?>/information">企業情報</a></li>
+								<li><a href="<?php echo home_url(); ?>/information/service">事業内容</a></li>
+								<li><a href="<?php echo home_url(); ?>/information/idea">経営理念・ビジョン</a></li>
+					            <li><a href="<?php echo home_url(); ?>/information/message">社長・専務メッセージ</a></li>
+					            <li><a href="<?php echo home_url(); ?>/information/company">会社概要</a></li>
+					            <li><a href="<?php echo home_url(); ?>/">ふじや動画集</a></li>
+							</ul>
+                		<!-- /.footer__navi__inner --></div>
+            			<div class="footer__navi__inner">
+							<ul class="regulation-sp">
+								<li class="--type01"><a href="<?php echo home_url(); ?>/shop">店舗紹介</a></li>
+							</ul>
+							<ul>
+								<li class="--type01"><a href="<?php echo home_url(); ?>/recruit">採用情報</a></li>
+								<li><a href="<?php echo home_url(); ?>/recruit">正社員募集</a></li>
+								<li><a href="<?php echo home_url(); ?>/parttime">アルバイト募集</a></li>
+							</ul>
+							<ul class="isSP">
+								<li class="--type01"><a href="<?php echo home_url(); ?>/p_news">お知らせ</a></li>
+								<li class="--type01"><a href="<?php echo home_url(); ?>/blog">ブログ</a></li>
+								<li class="--type01"><a href="<?php echo home_url(); ?>/policy">プライバシーポリシー</a></li>
+							</ul>
+                		<!-- /.footer__navi__inner --></div>
+                	<!-- /.footer__navi --></div>
+                <!-- /.col --></div>
+            <!-- /.row --></div>
+            <div class="footer__bottom">
+	        	<div class="row">
+	            	<div class="col-12 col-md-6 sM">
+		           		<small class="copyright">&copy; 2023 株式会社クワタ  All Rights Reserved.</small>
+	                <!-- /.col --></div>
+	            	<div class="col-12 col-md-6 sM">
+	            		<div class="footer__navi">
+							<ul>
+								<li class="--type01"><a href="<?php echo home_url(); ?>/p_news">お知らせ</a></li>
+								<li class="--type01"><a href="<?php echo home_url(); ?>/blog">ブログ</a></li>
+					            		<li class="--type01"><a href="<?php echo home_url(); ?>/policy">プライバシーポリシー</a></li>
+							</ul>
+	                	<!-- /.footer__navi --></div>
+	                <!-- /.col --></div>
+	            <!-- /.row --></div>
+			<!-- /.footer__bottom --></div>
+		<!-- /.inBase --></div>
+	<!-- /#footer --></footer>
+
+	
+        
+	<p id="btnRise"><a href="#wrapper"><img src="img/common/btnRise.png" alt="ページ上部に戻る" /></a></p>
+	  
+	<div id="btnTelEmpty"></div>
+    
+	    <div id="btnPageBottom">
+	        <div class="btnPageBottom--btn btnPageBottom--type01">
+	        	<div class="btnPageBottom--type01__inner">
+		            <a class="clearfix" href="#">
+		                <p class="btnPageBottom--type01__btnSent">正社員募集</p>
+		            </a>
+		            <a class="clearfix" href="#">
+		                <p class="btnPageBottom--type01__btnSent">アルバイト募集</p>
+		            </a>
+		            <a class="clearfix" href="<?php echo home_url(); ?>/shop">
+		                <p class="btnPageBottom--type01__btnSent">店舗一覧</p>
+		            </a>
+	            <!-- /.btnPageBottom--type01__inner --></div>
+	        <!-- /.btnPageBottom--btn --></div>
+	    <!-- /#btnPageBottom --></div>
+<!-- /#wrapper --></div>
+
+</body>
+</html>
+
+<script data-main="js/main" src="js/require.js"></script>
+
+

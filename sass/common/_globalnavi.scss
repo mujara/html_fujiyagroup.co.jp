@@ -1,0 +1,618 @@
+@use "../_setting" as s;
+
+.globalNavi {
+	display:none;
+	@include s.media(m){
+		display:block;
+		width:73%;
+		float:right;
+	}
+}
+
+// .globalNaviSmall　グローバルナビ ハンバーガーメニュー
+.globalNaviSmall {
+	&__icon {
+		width: 3.5em;
+		height: 4.6em;
+		position: absolute;
+		top:0;
+		right:0;
+	}
+	&__iconButton{
+		width: 3.5em;
+		height: 4.6em;
+		cursor:pointer;
+		float: right;
+		display: block;
+		background: rgba(s.$colorType02,1);
+		position: relative;
+		z-index:999;
+	}
+	&__icon span {
+	    width: 2.3em;
+	    height: 2px;
+	    display: block;
+	    background: #FFF;
+	    position: absolute;
+	    left: 50%;
+	    top: 50%;
+	    margin-left: -33%; 
+	}
+}
+	
+
+.globalNaviSmall{
+	&__icon--type01{
+		// ハンバーガーメニュー 押す前
+		span {
+		  -webkit-transition: all 0.3s;
+		          transition: all 0.3s;
+		  -webkit-transform: rotate(0deg);
+		      -ms-transform: rotate(0deg);
+		          transform: rotate(0deg); 
+		}
+		.iconButton--top {
+		  -webkit-transform: translateY(-0.8em);
+		      -ms-transform: translateY(-0.8em);
+		          transform: translateY(-0.8em); 
+		}
+		.iconButton--bottom {
+		  -webkit-transform: translateY(0.8em);
+		      -ms-transform: translateY(0.8em);
+		          transform: translateY(0.8em); 
+    	}
+
+    	// ハンバーガーメニュー hover
+		&:hover {
+			.iconButton--top {
+			  -webkit-transform: translateY(-0.9em);
+			      -ms-transform: translateY(-0.9em);
+			          transform: translateY(-0.9em);
+			}
+			.iconButton--bottom {
+			  -webkit-transform: translateY(0.9em);
+			      -ms-transform: translateY(0.9em);
+			          transform: translateY(0.9em); 
+          	}
+    	}
+
+    	// ハンバーガーメニュー 押した後の動き
+		&.is-open {
+			.iconButton--middle {
+			  background: rgba(255, 255, 255, 0);
+			}
+			.iconButton--top {
+			  -webkit-transform: rotate(-45deg) translateY(0px);
+			      -ms-transform: rotate(-45deg) translateY(0px);
+			          transform: rotate(-45deg) translateY(0px); 
+			}
+			.iconButton--bottom {
+				  -webkit-transform: rotate(45deg) translateY(0px);
+				      -ms-transform: rotate(45deg) translateY(0px);
+				          transform: rotate(45deg) translateY(0px);
+			}
+    	}
+	}
+}
+
+
+
+/* .globalNaviSmall　スマホグローバルナビ
+------------------------------------------ */
+.globalNaviSmall {
+	display:block;
+	width:100%;
+	position: fixed;
+	z-index:888;
+	top:0;
+	left:0;
+	@include s.media(m){
+		display: none;
+	}
+	&__menu{
+		width:100%;
+	  	max-height: 100vh;
+		display:block;
+		&__inner{
+			width:100%;
+		  min-height: 100vh;
+			overflow-x:hidden;
+			overflow-y:auto;
+  		padding: 2em;
+			display:block;
+		}
+		&__main{
+			img{
+				width:4em;
+			}
+		}
+		&__head{
+			display:block;
+			padding-top:3em;
+			text-align:center;
+			img{
+				width:60%;
+				margin-bottom:1em;
+			}
+			p{
+				font-size:0.8em;
+			}
+		}
+		&__headButton{
+			display:block;
+			margin-bottom:2em;
+			margin-top:2em;
+			display:block;
+			a{
+				background:#f1decf;
+				border-radius:1em;
+				padding: 1em 2.2em 1em 2.2em;
+				font-family: 'Noto Sans JP', sans-serif;
+				font-weight:800;
+			}
+		}
+		&__buttonGroupBox{
+			background:s.$colorType01;
+			padding:1em;
+			boreder-radius:1em;
+			display:block;
+			margin-bottom:1em;
+			ul{
+				width:100%;
+				display:flex;
+				flex-wrap:wrap;
+				align-items:center;
+				li{
+					width:50%;
+					padding:0.5em 0.5em;
+					a{
+						font-family: 'Noto Sans JP', sans-serif;
+						font-weight:800;
+						&:after{
+							content:"\03e";
+							float:right;
+							padding-right:1em;
+						}
+					}
+				}
+			}
+		}
+		&__buttonGroup a{
+			width:100%;
+			display:flex;
+			justify-content:center;
+			align-items:center;
+			background:#f1decf;
+			border-radius:1em;
+			text-align:center;
+			padding:1em;
+			margin-bottom:1em;
+			img{
+				margin-right:1em;
+				width:4em;
+			}
+			b{
+				font-family: 'Noto Sans JP', sans-serif;
+				font-weight:800;
+			}
+		}
+		&__buttonGroup span{
+			width:100%;
+			display:flex;
+			justify-content:center;
+			align-items:center;
+			border:#f1decf solid 2px;
+			border-radius:1em;
+			text-align:center;
+			padding:1em;
+			margin-bottom:1em;
+			color:#d5a730;
+			img{
+				margin-right:1em;
+				width:4em;
+			}
+			b{
+				font-family: 'Noto Sans JP', sans-serif;
+				font-weight:800;
+			}
+		}
+		&__buttonList{
+			display:flex;
+			item-aligun:center;
+			justify-content:center;
+			margin-bottom:1em;
+			li{
+				width:33.3%;
+				padding:1em 0.5em;
+				a{
+					display:block;
+					background:#f1decf;
+					border-radius:1em;
+					text-align:center;
+					padding:1em;
+					span{
+						font-family: 'Noto Sans JP', sans-serif;
+						font-weight:800;
+					}
+					img{
+						width:4em;
+					}
+				}
+				&:nth-child(3){
+					a{
+						border:s.$colorType02 solid 3px;
+					}
+				}
+			}
+		}
+		&__buttonRecruit{
+			display:block;
+			text-align:center;
+			a{
+				border: s.$colorType02 solid 3px;
+				display: inline-block;
+				font-size: inherit;
+				line-height: 1.2;
+				padding: 1em 2.2em 1em 2.2em;
+				background: transparent;
+				border-radius: 1.8em;
+				vertical-align: bottom;
+				position: relative;
+				overflow: hidden;
+				text-align:center;
+				font-family: 'Noto Sans JP', sans-serif;
+				font-weight:800;
+			}
+		}
+	}
+	.modal__overlay {
+		background: none;
+	}
+	.modal__container {
+		background:rgba(255,255,255,.95);
+		width:100%;
+		max-width: 100%;
+		border-radius: 0;
+  		padding: 0;
+		min-height: 100vh;
+	}
+}
+
+
+/* Safari */
+_:lang(x)+_:-webkit-full-screen-document, .globalNaviSmall__menu {
+  min-height: -webkit-fill-available;
+}
+_:lang(x)+_:-webkit-full-screen-document, .globalNaviSmall__menu__inner {
+  min-height: -webkit-fill-available;
+}
+
+//以下768px以上で適用される　レイアウトの指定-----------------------------------------------
+@include s.media(m){
+
+.globalNavi{
+	&__menu{
+		&__main{
+			margin-left:6em;
+			&>li {
+				width: 18%;
+				height: 8.38em;
+				text-align:center;
+				display:block;
+				float: left;
+				text-align:center;
+			  position: relative; /*z-indexの指定や子要素の基準とするために指定*/
+			  z-index: 2; /*ドロップダウンしたメニューが隠れないように*/
+			   a{
+						height: 8.38em;
+						padding-top:1em;
+						font-family: 'Noto Sans JP', sans-serif;
+						font-weight:800;
+						color:s.$colorType03;
+						span{
+							font-size:1.1em;
+							line-height:1.7;
+							@include s.media(xl){
+								font-size:1.2em;
+							}
+						}
+						&:hover{
+			  				color:s.$colorType03;
+			  				background:s.$colorType02;
+						}
+			   }
+			   >div{
+						height: 8.38em;
+						padding-top:1em;
+						font-family: 'Noto Sans JP', sans-serif;
+						font-weight:800;
+						color:s.$colorType03;
+						span{
+							font-size:1.1em;
+							@include s.media(xl){
+								font-size:1.2em;
+							}
+						}
+						&:hover{
+			  				color:s.$colorType03;
+			  				background:s.$colorType02;
+						}
+			   }
+			  &:nth-child(1){
+			  	width: 32%;
+			  	background:s.$colorType02;
+			  	a{
+						height: 8.38em;
+			  		color:s.$colorType03;
+			  		&:hover{
+			  			color:s.$colorType04;
+			  		}
+			  	}
+			  	>a{
+			  		pointer-events:none;
+			  	}
+			  	>div{
+						height: 8.38em;
+			  		color:s.$colorType03;
+			  		&:hover{
+			  			color:s.$colorType04;
+			  		}
+			  	}
+			  }
+			  &:nth-child(4){
+			  	>a{
+						position:relative;
+						z-index:1;
+						-webkit-transition: all .2s ease;
+						transition: all .2s ease;
+						&::before{
+							content:"";
+							display:block;
+							width:90%;
+							height:7em;
+							position:absolute;
+							top:0.5em;
+							left:5%;
+							border-radius:0.5em;
+							border:s.$colorType02 solid 3px;
+							z-index:0;
+							background: s.$colorType01;
+							z-index:-1;
+						    -webkit-transition: all .2s ease;
+						    transition: all .2s ease;
+						}
+				  	&:hover{
+				  		background:none;
+							&::before{
+								background: url(../img/common/imgPattern01.png) repeat center top;
+							    -webkit-transition: all .2s ease;
+							    transition: all .2s ease;
+							}
+				  	}
+				  }
+			  	>div{
+						position:relative;
+						z-index:1;
+						-webkit-transition: all .2s ease;
+						transition: all .2s ease;
+						&::before{
+							content:"";
+							display:block;
+							width:90%;
+							height:7em;
+							position:absolute;
+							top:0.5em;
+							left:5%;
+							border-radius:0.5em;
+							border:s.$colorType02 solid 3px;
+							z-index:0;
+							background: s.$colorType01;
+							z-index:-1;
+						    -webkit-transition: all .2s ease;
+						    transition: all .2s ease;
+						}
+				  	&:hover{
+				  		background:none;
+							&::before{
+								background: url(../img/common/imgPattern01.png) repeat center top;
+							    -webkit-transition: all .2s ease;
+							    transition: all .2s ease;
+							}
+				  	}
+				  }
+			  	>span{
+					position:relative;
+					z-index:1;
+					-webkit-transition: all .2s ease;
+					transition: all .2s ease;
+					&::before{
+						content:"";
+						display:block;
+						width:90%;
+						height:7em;
+						position:absolute;
+						top:0.5em;
+						left:5%;
+						border-radius:0.5em;
+						border:s.$colorType02 solid 3px;
+						z-index:0;
+						background: s.$colorType01;
+						z-index:-1;
+						    -webkit-transition: all .2s ease;
+						    transition: all .2s ease;
+					}
+			  		&:hover{
+			  			background:none;
+						&::before{
+							background: url(../img/common/imgPattern01.png) repeat center top;
+						    -webkit-transition: all .2s ease;
+						    transition: all .2s ease;
+						}
+			  		}
+			  	}
+			  }
+			  &:nth-child(5){
+			  	width: 17.7%;
+			  	float: right;
+			  	padding-top:4em;
+					a{
+				    border: s.$colorType02 solid 3px;
+				    display: inline-block;
+					  font-size: inherit;
+					  line-height: 1.2;
+					  padding: 0.7em 1.2em 0.7em 1.2em;
+					  background: transparent;
+					  border-radius: 1.8em;
+					  vertical-align: bottom;
+					  position: relative;
+					  overflow: hidden;
+						@include s.media(xl){
+					  	padding: 0.7em 1.7em 0.7em 1.7em;
+						}
+					}
+			  }
+				&.pR{
+					float: right;
+				}
+			}
+			li a {
+				font-family: 'Noto Sans JP', sans-serif;
+				font-weight:800;
+				color:s.$colorType03;
+				text-decoration:none;
+				display:block;
+				&:hover {
+					text-decoration:none;
+					color:s.$colorType03;
+				}
+				img{
+					width:3.4em;
+					margin-bottom:0.5em;
+				}
+			}
+			li >div {
+				font-family: 'Noto Sans JP', sans-serif;
+				font-weight:800;
+				color:s.$colorType03;
+				text-decoration:none;
+				display:block;
+		    -webkit-transition: all .2s ease;
+		    transition: all .2s ease;
+				&:hover {
+					text-decoration:none;
+					color:s.$colorType03;
+				}
+				img{
+					width:3.4em;
+					margin-bottom:0.5em;
+				}
+			}
+		}
+	}
+}
+
+// globalNavi__menu__sub
+.globalNavi {
+	ul{
+		li{
+			ul.globalNavi__menu__sub {
+					width:240%;
+			  	opacity: 0;  /*サブメニューは最初は非表示にしておく*/
+			  	visibility: hidden;  /*サブメニューは最初は非表示にしておく*/
+			  	position: absolute;  /*絶対配置にしておかないとうまくいかない*/
+			  	top: 7em;
+			  	left: -70%;
+			    -webkit-transition: all .2s ease;
+			    transition: all .2s ease;
+			    display:flex;
+			    justify-content:center;
+			    align-items:center;
+			    &::before{
+			    	content:"";
+			    	display:block;
+			    	width:2em;
+			    	height:2em;
+			    	background:url(../img/common/imgHeadGlobalSubNavi.png) no-repeat center top;
+			    	position:absolute;
+			  		top: -1em;
+			  		left:50%;
+			  		margin-left:-1em;
+			    }
+			    li{
+					height:auto;
+				  	float: none;  /*サブメニューはフロートさせないので解除*/
+				  	padding: 0;  /*親メニューのパディングを解除*/
+					margin:0;
+					*margin-top:-8px;
+					display:block;
+					line-height:1.5em;
+					li{
+						width:auto;
+						height:auto;
+					}
+					a{
+						width:auto;
+						height:auto;
+					  color:s.$colorType03;
+						text-decoration:none;
+						text-align:center;
+						display:block;
+						background:#FFF;
+						padding:1em 0.5em;
+						font-size:1em;
+						@include s.media(xl){
+							padding:1em 1em;
+							font-size:1.1em;
+						}
+						&:hover{ 
+							color:s.$colorType03;
+						}
+						&:before {
+                    content: "\f111";
+                    font-family: 'icomoon';
+                    margin-right: 0.5em;
+                }
+					}
+				}
+			}
+			&:hover ul.globalNavi__menu__sub {
+				width:240%;
+			  	top: 8em;
+			    	visibility:visible;
+			    	opacity: 1;
+			  	display:flex;    /*マウスオーバー時にサブメニューを表示する*/
+				background-color: #FFF;
+				border-radius:0.7em;
+				a:hover{ 
+					color:s.$colorType04;
+				}
+			}
+			&:nth-child(1) ul.globalNavi__menu__sub{
+				width:350%;
+				position: absolute;
+				left: -125%;
+				li a{
+					background:none;
+				}
+			}
+			&:nth-child(2) ul.globalNavi__menu__sub{
+				width:600%;
+				position: absolute;
+				left: -250%;
+				li a{
+					background:none;
+				}
+			}
+		}
+	}
+}
+
+.globalNavi.globalNaviAccordion ul.globalNavi__menu__sub li{
+  	padding:0;
+}
+
+/* When Active Page */
+/*body#■■ .globalNavi ul.globalNavi__menu__main li:nth-child(■) ul.globalNavi__menu__sub li:nth-child(■) a { color:#000; background-color: #DDD; pointer-events: none; }*/
+
+} 
+// 768px以上で適用される　レイアウトの指定　ここまで

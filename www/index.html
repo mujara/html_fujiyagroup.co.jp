@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head prefix="og: http://ogp.me/ns">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,user-scalable=no,maximum-scale=1" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="keywords" content="●サイトの検索キーワード●" />
+<meta name="description" content="●サイトの検索説明●" />
+<title>●サイトのタイトル●</title>
+<meta property="og:url" content="●ページの URL●" />
+<meta property="og:type" content="●ページの種類●website article" />
+<meta property="og:title" content="●ページの タイトル●" />
+<meta property="og:description" content="●ページの説明文●" />
+<meta property="og:site_name" content="●サイト名●" />
+<meta property="og:image" content="●サムネイル画像のURL●" />
+<meta name="apple-mobile-web-app-title" content="●iOS表示名●" />
+<meta name="author" content="●作者名●" />
+<link rel="apple-touch-icon" href="iphone.png">
+<link rel="stylesheet" href="css/import.css" media="all" />
+
+<!-- Googleフォント -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&family=Kaisei+Tokumin:wght@500;700;800&family=Lato:wght@900&family=Noto+Sans+JP:wght@200;400;500;800;900&family=Shippori+Mincho:wght@700&display=swap" rel="stylesheet">
+<!-- フォントプラス -->
+<script src="https://webfont.fontplus.jp/accessor/script/fontplus.js?gUwfYWZ-iOk%3D&box=aVkPVMJgt3M%3D&aa=1&ab=2"></script>
+
+</head>
+
+<body id="home" class="home">
+
+<div id="wrapper">
+	<header id="header" class="clearfix">
+		<!--<div id="pageTopFix">-->
+			<div class="inBase clearfix">
+				<div class="header__siteTitleBox">
+					<h1 class="header__siteTitle"><a href="<?php echo home_url(); ?>"><img src="img/common/siteTitle.svg" alt="ふじやグループ -SINCE1933-" /></a></h1>
+				<!-- /.header__siteTitleBox --></div>
+
+				<nav class="globalNavi">
+					<ul class="globalNavi__menu__main clearfix">
+						<li><div><figure><img src="img/common/naviIconGroup.png" alt="ふじやグループについて" /></figure><span>ふじやグループについて</span></div>
+				            <ul class="globalNavi__menu__sub">
+								<li><a href="<?php echo home_url(); ?>/about/about">ふじやグループとは</a></li>
+								<li><a href="<?php echo home_url(); ?>/about/guest">お客様へ</a></li>
+								<li><a href="<?php echo home_url(); ?>/about/staff">スタッフへ</a></li>
+								<li><a href="<?php echo home_url(); ?>/about/client">お取引先様へ</a></li>
+								<li><a href="<?php echo home_url(); ?>/about/introduction">スタッフ紹介</a></li>
+							</ul> 
+			            </li>
+						<li><div><figure><img src="img/common/naviIconCompany.png" alt="企業情報" /></figure><span>企業情報</span></div>
+				            <ul class="globalNavi__menu__sub">
+								<li><a href="<?php echo home_url(); ?>/information/idea">経営理念・ビジョン</a></li>
+								<li><a href="<?php echo home_url(); ?>/information/message">社長・専務メッセージ</a></li>
+								<li><a href="<?php echo home_url(); ?>/information/service">事業内容</a></li>
+								<li><a href="<?php echo home_url(); ?>/information/company">会社概要</a></li>
+								<li><a href="<?php echo home_url(); ?>/information/movie">ふじや動画集</a></li>
+							</ul> 
+			            </li>
+						<li><a href="<?php echo home_url(); ?>/shop"><figure><img src="img/common/naviIconShop.png" alt="店舗紹介" /></figure><span>店舗紹介</span></a></li>
+						<li><div><figure><img src="img/common/naviIconRecruit.png" alt="採用情報" /></figure><span>採用情報</span></div>
+				            <ul class="globalNavi__menu__sub">
+								<li><a href="<?php echo home_url(); ?>/recruit/">社員採用</a></li>
+								<li><a href="<?php echo home_url(); ?>/parttime/">アルバイト採用</a></li>
+							</ul> 
+			            </li>
+					</ul>
+			    <!-- /.globalNavi --></nav>
+			<!-- /.inBase --></div>
+		<!-- /#pageTopFix --</div>-->
+		
+			<nav class="globalNaviSmall">
+				<div id="globalNaviSmallIcon" class="globalNaviSmall__icon globalNaviSmall__icon--type01">
+					<div class="globalNaviSmall__iconButton">
+						<span class="iconButton--top"></span>
+						<span class="iconButton--middle"></span>
+						<span class="iconButton--bottom"></span>
+					</div>
+				</div>
+
+				<div class="modal micromodal-slide" id="modal-globalNaviSmall" aria-hidden="true">
+					<div class="modal__overlay" tabindex="-1" data-micromodal-close>
+				    		<div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-globalNaviSmall-labelledby">
+
+							<div class="globalNaviSmall__menu" id="modal-globalNaviSmall-labelledby">
+								<div class="globalNaviSmall__menu__inner">
+									<div class="globalNaviSmall__menu__main">
+										<div class="globalNaviSmall__menu__head">
+											<div class="globalNaviSmall__menu__siteTitle"><img src="img/common/siteTitle.svg" alt="ふじやグループ -SINCE1933-" /></div>
+											<!--<p>〒662-0832<br>
+												兵庫県西宮市甲風園1丁目5-18 スギモトビル3F</p>-->
+											<div class="globalNaviSmall__menu__headButton"><a href="<?php echo home_url(); ?>">ホーム</a><!-- /.globalNaviSmall__menu__headButton --></div>
+										<!-- /.globalNaviSmall__menu__head --></div>
+
+										<div class="globalNaviSmall__menu__buttonGroupBox">
+											<div class="globalNaviSmall__menu__buttonGroup"><span>
+												<figure><img src="img/common/naviIconGroup.png" alt="ふじやグループについて" /></figure>
+												<b>ふじやグループについて</b>
+											</span><!-- /.globalNaviSmall__menu__buttonGroup --></div>
+											<ul>
+												<li><a href="<?php echo home_url(); ?>/about/about">ふじやグループとは</a></li>
+												<li><a href="<?php echo home_url(); ?>/about/guest">お客様へ</a></li>
+												<li><a href="<?php echo home_url(); ?>/about/staff">スタッフへ</a></li>
+												<li><a href="<?php echo home_url(); ?>/about/client">お取引先様へ</a></li>
+												<li><a href="<?php echo home_url(); ?>/about/introduction">スタッフ紹介</a></li>
+											</ul> 
+										<!-- /.globalNaviSmall__menu__buttonGroupBox --></div>
+
+										<div class="globalNaviSmall__menu__buttonGroupBox">
+											<div class="globalNaviSmall__menu__buttonGroup"><span>
+												<figure><img src="img/common/naviIconCompany.png" alt="企業情報" /></figure>
+												<b>企業情報</b>
+											</span><!-- /.globalNaviSmall__menu__buttonGroup --></div>
+											<ul>
+												<li><a href="<?php echo home_url(); ?>/information/idea">経営理念・ビジョン</a></li>
+												<li><a href="<?php echo home_url(); ?>/information/message">社長メッセージ</a></li>
+												<li><a href="<?php echo home_url(); ?>/information/service">事業内容</a></li>
+												<li><a href="<?php echo home_url(); ?>/information/company">会社概要</a></li>
+												<li><a href="<?php echo home_url(); ?>/information/movie">ふじや動画集</a></li>
+											</ul> 
+										<!-- /.globalNaviSmall__menu__buttonGroupBox --></div>
+
+										<div class="globalNaviSmall__menu__buttonGroupBox">
+											<div class="globalNaviSmall__menu__buttonGroup"><span>
+												<figure><img src="img/common/naviIconRecruit.png" alt="採用情報" /></figure>
+												<b>採用情報</b>
+											</span><!-- /.globalNaviSmall__menu__buttonGroup --></div>
+											<ul>
+												<li><a href="<?php echo home_url(); ?>/recruit/">社員採用</a></li>
+												<li><a href="<?php echo home_url(); ?>/parttime/">アルバイト採用</a></li>
+											</ul> 
+										<!-- /.globalNaviSmall__menu__buttonGroupBox --></div>
+
+										<ul class="globalNaviSmall__menu__buttonList">
+											<li><a href="<?php echo home_url(); ?>/shop"><figure><img src="img/common/naviIconShop.png" alt="店舗紹介" /></figure><span>店舗紹介</span></a></li>
+										</ul>
+									<!-- /.globalNaviSmall__menu__main --></div>
+								<!-- /.globalNaviSmall__menu__inner --></div>
+							<!-- /.globalNaviSmall__menu --></div>
+
+				    		<!-- /.modal__container --></div>
+					<!-- /.modal__overlay --></div>
+				<!-- /#modal-globalNaviSmall --></div>
+		    <!-- /.globalNaviSmall --></nav>
+
+		    
+	<!-- /#header --></header>
+    
+    <section class="mainVisual">
+    	<div class="inBase clearfix">
+    		<div class="mainVisual__videoBox">
+    			<div class="mainVisual__video">
+				<video playsinline muted autoplay loop muted src="img/home/mainVisualFullHD.mp4" class="isPC"></video>
+				<video playsinline muted autoplay loop muted src="img/home/mainVisualSP.mp4" class="isSP"></video>
+    				<!--<img src="img/home/imgMainVisual.jpg" alt="居酒屋ふじや本店" />-->
+    			<!-- /.video --></div>
+    		<!-- /.videoBox --></div>
+    		<!-- <figure class="mainVisual__image">
+    			<img src="img/home/imgMainVisual.jpg" alt="居酒屋ふじや本店" class="isPC" />
+    			<img src="img/home/imgMainVisual_sp.jpg" alt="居酒屋ふじや本店" class="isSP" />
+    		</figure>-->
+    		<figure class="mainVisual__fujiyamaru">
+    			<img src="img/home/imgIllustMainVisual.png" alt="居酒屋ふじや本店" class="isPC" />
+    			<img src="img/home/imgIllustMainVisual_sp.png" alt="居酒屋ふじや本店" class="isSP" />
+    		</figure>
+    		<figure class="mainVisual__fu --type01"><img src="img/home/apng.png" alt="ふ" /></figure>
+    		<figure class="mainVisual__fu --type02"><img src="img/home/apng2.png" alt="ふ" /></figure>
+    		<figure class="mainVisual__fu --type03"><img src="img/home/apng2.png" alt="ふ" /></figure>
+    		<figure class="mainVisual__fu --type04"><img src="img/home/apng.png" alt="ふ" /></figure>
+    		<figure class="mainVisual__fu --type05"><img src="img/home/apng.png" alt="ふ" /></figure>
+        <!-- /.inBase --></div>
+    <!-- /.mainVisual --></section>
+	
+	<div id="contents" class="clearfix">
+		<div class="inBase bgHomeContents --typeScrollFadeIn">
+			<figure>
+				<img src="img/home/bgAbout.jpg" alt="居酒屋ふじや本店" class="isPC" />
+				<img src="img/home/bgAbout_sp.jpg" alt="居酒屋ふじや本店" class="isSP" />
+			</figure>
+		<!-- /.inBase --></div>
+		<div class="inBase clearfix">
+			<ul class="headStoreList sM-l --typeScrollFadeIn">
+				<li class="sM"><a href="https://fujiya-honten.com/"><figure><img src="img/home/shopLogo01.png" alt="居酒屋ふじや本店" /></figure><span>居酒屋<br class="hidden-pc">ふじや本店</span></a></li>
+				<li class="sM"><a href="https://senbondori.com/"><figure><img src="img/home/shopLogo02.png" alt="炭火と酒 千本鶏" /></figure><span>炭火と酒<br class="hidden-pc"> 千本鶏</span></a></li>
+				<li class="sM"><a href="https://irishpub-capalluisce.com/"><figure><img src="img/home/shopLogo03.png" alt="アイリッシュカフェ＆レストラン　カプリシカ" /></figure><span><small>アイリッシュカフェ＆<br class="hidden-pc">レストラン</small>カプリシカ</span></a></li>
+				<li class="sM"><a href="https://torihan-honten.com/"><figure><img src="img/home/shopLogo04.png" alt="やきとり専門店　鳥半本店" /></figure><span><small>やきとり専門店</small>鳥半<br class="hidden-pc">本店</span></a></li>
+				<li class="sM"><a href="https://torihan-hanshin.com/"><figure><img src="img/home/shopLogo05.png" alt="やきとり専門店　鳥半 阪神西宮店" /></figure><span><small>やきとり専門店</small>鳥半<br class="hidden-pc"> 阪神西宮店</span></a></li>
+        	<!-- /.headStoreList --></ul>
+        <!-- /.inBase --></div>
+
+        <div class="homeAboutBox sM-xl --typeScrollFadeIn">
+			<div class="inBase clearfix">
+				<div class="homeAboutBox__inner">
+					<h2 class="homeAboutBox__title sM-l">
+						<small>飲食業界の常識を超える<br class="hidden-pc">「超飲食グループ」</small>
+						<span>ふじやグループ</span>
+						<figure><img src="img/common/siteTitle_b.svg" alt="ふじやグループ" /></figure>
+					</h2>
+					<div class="homeAboutBox__sentenceBox sM-l">
+						<figure class="homeAboutBox__imgAboutL01"><img src="img/home/imgAboutL01.jpg" alt="ふじやグループのご案内" /></figure>
+						<figure class="homeAboutBox__imgAboutL02"><span><img src="img/home/imgAboutL02.jpg" alt="ふじやグループのご案内" /></span></figure>
+						<figure class="homeAboutBox__imgAboutL03"><img src="img/home/imgAboutL03.jpg" alt="ふじやグループのご案内" /></figure>
+						<figure class="homeAboutBox__imgAboutR01"><img src="img/home/imgAboutR01.jpg" alt="ふじやグループのご案内" /></figure>
+						<figure class="homeAboutBox__imgAboutR02"><img src="img/home/imgAboutR02.jpg" alt="ふじやグループのご案内" /></figure>
+						<figure class="homeAboutBox__imgAboutR03"><span><img src="img/home/imgAboutR03.jpg" alt="ふじやグループのご案内" /></span></figure>
+
+						<p class="homeAboutBox__sentence sM-l">
+							<b>「いらっしゃいませ！」</b>
+							迎えたスタッフの笑顔に、お客様の顔がほころぶ。<br>
+							今日のお疲れが吹き飛んだ、お客様のその表情に、<br>
+							ふじやグループは90年支えられてきました。
+						</p>
+						<p class="homeAboutBox__sentence sM-l">
+							仕事を通して成長できることにワクワクした気持ちを<br>
+							絶やさないでいることが、私たちの強みです。<br>
+							皆で「超飲食グループ」としてお客様の期待を超える、<br>
+							それがお客様・スタッフの豊かな時間につながることを<br>
+							ふじやグループは信じています。
+						</p>
+						<figure class="homeAboutBox__sentenceImage"><img src="img/home/imgAbout_sp.jpg" alt="ふじやグループとは" /></figure>
+						<div class="button--type01 tC"><a href="<?php echo home_url(); ?>/about">ふじやグループとは</a></div>
+	        		<!-- /.homeAboutBox__sentenceBox --></div>
+					<div class="homeAboutBox__symbol --typeScrollFadeIn">
+						<figure><img src="img/home/imgFujiyamaru.png" alt="ふじや丸" /></figure>
+						<dl>
+							<dt>［ふじや丸］</dt>
+							<dd>皆の夢を乗せて航海を続ける、<br>ふじやグループのシンボル船</dd>
+						</dl>
+	        		<!-- /.homeAboutBox__symbol --></div>
+        		<!-- /.homeAboutBox__inner --></div>
+        	<!-- /.inBase --></div>
+        <!-- /.homeAboutBox --></div>
+
+		<div class="inBase clearfix">
+			<div class="homePromiseBox">
+				<h2 class="homePromiseBox__title --typeScrollFadeIn">
+						<small>ふじやグループの</small>
+						<span>お約束</span>
+				</h2>
+				<p class="homePromiseBox__sentence --typeScrollFadeIn">私たちが、理想を叶えるために挑むこと。<br>
+					幸せに気づき、感謝し、磨きつづける。<br>
+					3つの指針をもとに、<br class="hidden-pc">チームで力を合わせることで<br>
+					目標を達成できると考えます。</p>
+
+				<div class="homePromiseBox__promise --type01 clearfix --typeScrollFadeIn">
+					<p class="homePromiseBox__number">01</p>
+					<h3 class="homePromiseBox__inTitle sM-s">
+						<small>ご来店いただいたお客様へ</small>
+						<span>手作りの料理と<br>活気あるおもてなし</span>
+					</h3>
+					<p class="homePromiseBox__promiseSentence sM-l sM-pc">
+						素材や手作りにこだわった料理と、<br>
+						スタッフの笑顔と活気で、<br>
+						お食事の時間が思い出の「体験」に。
+					</p>
+					<div class="button--type01"><a href="<?php echo home_url(); ?>/about/guest">お客様へのお約束</a></div>
+					<figure class="homePromiseBox__image">
+						<img src="img/home/imgPromise01.png" alt="お客様へのお約束" class="isPC" />
+						<img src="img/home/imgPromise01_sp.png" alt="お客様へのお約束" class="isSP" />
+					</figure>
+					<figure class="homePromiseBox__bg"><img src="img/home/bgPromise01.png" alt="お客様へのお約束" /></figure>
+				<!-- /.homePromiseBox__promise01 --></div>
+
+				<div class="homePromiseBox__promise --type02 clearfix --typeScrollFadeIn">
+					<p class="homePromiseBox__number">02</p>
+					<h3 class="homePromiseBox__inTitle sM-s">
+						<small>一緒に働く仲間へ</small>
+						<span>成長を楽しむ<br>
+						面白い会社へ</span>
+					</h3>
+					<p class="homePromiseBox__promiseSentence sM-l sM-pc">
+						仲間同士が同じ想いで、<br class="hidden-sp">
+						成長を実感しながら働ける<br class="hidden-sp">
+						環境づくりをします。
+					</p>
+					<div class="button--type01"><a href="<?php echo home_url(); ?>/about/staff">仲間へのお約束</a></div>
+					<figure class="homePromiseBox__image">
+						<img src="img/home/imgPromise02.png" alt="仲間へのお約束" class="isPC" />
+						<img src="img/home/imgPromise02_sp.png" alt="仲間へのお約束" class="isSP" />
+					</figure>
+				<!-- /.homePromiseBox__promise01 --></div>
+
+				<div class="homePromiseBox__promise --type03 clearfix --typeScrollFadeIn">
+					<p class="homePromiseBox__number">03</p>
+					<h3 class="homePromiseBox__inTitle sM-s">
+						<small>応援してくださる<br class="hidden-pc">お取引先様へ</small>
+						<span>ご縁と感謝</span>
+					</h3>
+					<p class="homePromiseBox__promiseSentence sM-l sM-pc">
+						真のパートナーとして互いに発展し、<br class="hidden-sp">
+						信頼していただけるグループであり続けます。<br>共に成長させて下さい。
+					</p>
+					<div class="button--type01"><a href="<?php echo home_url(); ?>/about/client">取引先様へのお約束</a></div>
+					<figure class="homePromiseBox__image">
+						<img src="img/home/imgPromise03.png" alt="取引先様へのお約束" class="isPC" />
+						<img src="img/home/imgPromise03_sp.png" alt="仲間へのお約束" class="isSP" />
+					</figure>
+					<figure class="homePromiseBox__bg"><img src="img/home/bgPromise02.png" alt="取引先様へのお約束" /></figure>
+				<!-- /.homePromiseBox__promise01 --></div>
+			<!-- /.homePromiseBox --></div>
+        <!-- /.inBase --></div>
+
+		<div class="inBase clearfix">
+			<div class="homeMessageBox sM --typeScrollFadeIn">
+				<div class="homeMessageBox__inner">
+					<h3 class="homeMessageBox__title sM">
+						<small>Top message</small>
+						<span>ご縁に感謝！出会えてよかったと<br>
+						感じてもらえる飲食グループに</span>
+					</h3>
+					<p class="homeMessageBox__sentence sM">
+							日頃ふじやグループをご愛顧いただきありがとうございます。<br>
+	地域の皆様に支えて頂き半世紀以上、日々営業を続けてこれた事に感謝しています。これからもスタッフ全員と力を合わせて、真心の籠った接客と料理を提供し続けてまいります。
+					</p>
+					<figure class="homeMessageBox__image--sp"><img src="img/home/imgRepresentative_sp.jpg" alt="ふじやグループ 代表" /></figure>
+					<p class="homeMessageBox__name sM">
+							<small>ふじやグループ 代表</small>
+							<span>桑田 賢</span>
+					</p>
+					<div class="button--type02"><a href="<?php echo home_url(); ?>/information/message">代表メッセージ</a></div>
+				<!-- /.homeMessageBox__inner --></div>
+				<figure class="homeMessageBox__image"><img src="img/home/imgRepresentative.jpg" alt="ふじやグループ 代表" /></figure>
+			<!-- /.homeMessageBox --></div>
+        <!-- /.inBase --></div>
+
+		<div class="inBase clearfix">
+			<div class="homeWillBox --typeScrollFadeIn">
+				<figure class="homeWillBox__image--sp"><img src="img/home/imgWill_sp.jpg" alt="ふじやグループの『志』" /></figure>
+				<h3 class="homeWillBox__title">
+					<small>- ふじやグループの『志』 -</small>
+					<span>「超飲食グループの実現」と「幸せ集団の実現」</span>
+				</h3>
+				<div class="homeWillBox__inner">
+					<p class="homeWillBox__title--sp">
+						「超飲食グループの実現」と<br>「幸せ集団の実現」に<br>向かって突き進んで参ります。
+					</p>
+					<p class="homeWillBox__sentence">
+						「超飲食グループの実現」とは、数多とある飲食店の<br>
+						常識を超えて行こう、お客様の期待を超えて行こうと言う、<br>
+						ふじやグループが成すべき方向性を表した果てしない言葉です。<br>
+						そして「幸せ集団の実現」とは、超飲食グループを実現する<br>
+						ふじやグループのスタッフさん達を表していて、<br>
+						真心の籠った料理と接客をお客様に提供するには<br>
+						スタッフ一人ひとりの心が満たされている事が重要です。<br>
+						ふじやグループは「超飲食グループの実現」と<br>
+						「幸せ集団の実現」に向かって突き進んで行きます。
+					</p>
+					<div class="homeWillBox__button">
+						<div class="button--type02"><a href="<?php echo home_url(); ?>/information/idea">経営理念</a></div>
+					<!-- /.homeWillBox__button --></div>
+					<figure class="homeWillBox__image"><img src="img/home/imgWill.png" alt="ふじやグループの『志』" /></figure>
+				<!-- /.homeWillBox__inner --></div>
+			<!-- /.homeWillBox --></div>
+        <!-- /.inBase --></div>
+
+		<div class="inBase clearfix">
+			<div class="homeShopBox sM-xl --typeScrollFadeIn">
+				<div class="homeShopBox__title">
+					<h3 class="homeShopBox__inner">
+						<span>店舗一覧</span>
+						<small>Shop Infomation</small>
+					</h3>
+       			<!-- /.homeShopBox__title --></div>
+				<div class="row">
+				    <div class="col-12 col-md-4">
+						<div class="homeShopBox__shop"><a href="https://fujiya-honten.com/">
+							<figure class="homeShopBox__image"><img src="img/home/imgShop01.jpg" alt="居酒屋ふじや本店" /></figure>
+							<h4 class="homeShopBox__shopName"><span>居酒屋ふじや本店</span></h4>
+							<p class="homeShopBox__shopAddress">兵庫県西宮市甲風園1-4-10</p>
+				    		<table class="homeShopBox__information">
+				    			<tr>
+					    			<th>電話番号</th>
+					    			<td>0798-64-5624</td>
+				    			</tr>
+				    			<tr>
+					    			<th>営業時間</th>
+					    			<td>11:30 - 23:45<br>
+										（木曜のみ17:00 - 23:45）</td>
+				    			</tr>
+				    			<tr>
+					    			<th>定休日</th>
+					    			<td>年末年始</td>
+				    			</tr>
+				    		</table>
+						</a><!-- /.homeShopBox__shop --></div>
+				    </div>
+
+				    <div class="col-12 col-md-4">
+						<div class="homeShopBox__shop"><a href="https://senbondori.com/">
+							<figure class="homeShopBox__image"><img src="img/home/imgShop02.jpg" alt="炭火と酒 千本鶏" /></figure>
+							<h4 class="homeShopBox__shopName"><span>炭火と酒 千本鶏</span></h4>
+							<p class="homeShopBox__shopAddress">兵庫県西宮市甲風園1-4-15 1F</p>
+				    		<table class="homeShopBox__information">
+				    			<tr>
+					    			<th>電話番号</th>
+					    			<td>0798-66-5355</td>
+				    			</tr>
+				    			<tr>
+					    			<th>営業時間</th>
+					    			<td>17:00 - 23:45</td>
+				    			</tr>
+				    			<tr>
+					    			<th>定休日</th>
+					    			<td>年末年始</td>
+				    			</tr>
+				    		</table>
+						</a><!-- /.homeShopBox__shop --></div>
+				    </div>
+
+				    <div class="col-12 col-md-4">
+						<div class="homeShopBox__shop"><a href="https://irishpub-capalluisce.com/">
+							<figure class="homeShopBox__image"><img src="img/home/imgShop03.jpg" alt="アイリッシュカフェ＆レストラン　カプリシカ" /></figure>
+							<h4 class="homeShopBox__shopName"><small>アイリッシュカフェ＆レストラン</small><span>カプリシカ</span></h4>
+							<p class="homeShopBox__shopAddress">兵庫県西宮市甲風園1-4-15 2F</p>
+				    		<table class="homeShopBox__information">
+				    			<tr>
+					    			<th>電話番号</th>
+					    			<td>0798-66-5399</td>
+				    			</tr>
+				    			<tr>
+					    			<th>営業時間</th>
+					    			<td>17:00 - 23:45<br>
+										（土日のみ11:30 - 23:45）</td>
+				    			</tr>
+				    			<tr>
+					    			<th>定休日</th>
+					    			<td>月、火</td>
+				    			</tr>
+				    		</table>
+						</a><!-- /.homeShopBox__shop --></div>
+				    </div>
+
+				    <div class="col-12 col-md-4">
+						<div class="homeShopBox__shop"><a href="https://torihan-honten.com/">
+							<figure class="homeShopBox__image"><img src="img/home/imgShop04.jpg" alt="やきとり専門店 鳥半本店" /></figure>
+							<h4 class="homeShopBox__shopName"><span><small>やきとり専門店</small> 鳥半本店</span></h4>
+							<p class="homeShopBox__shopAddress">兵庫県西宮市甲風園1-4-15 1F</p>
+				    		<table class="homeShopBox__information">
+				    			<tr>
+					    			<th>電話番号</th>
+					    			<td>0798-66-5323</td>
+				    			</tr>
+				    			<tr>
+					    			<th>営業時間</th>
+					    			<td>17:00 - 23:45</td>
+				    			</tr>
+				    			<tr>
+					    			<th>定休日</th>
+					    			<td>年末年始</td>
+				    			</tr>
+				    		</table>
+						</a><!-- /.homeShopBox__shop --></div>
+				    </div>
+
+				    <div class="col-12 col-md-4">
+						<div class="homeShopBox__shop"><a href="https://torihan-hanshin.com/">
+							<figure class="homeShopBox__image"><img src="img/home/imgShop05.jpg" alt="やきとり専門店 鳥半阪神店" /></figure>
+							<h4 class="homeShopBox__shopName"><span><small>やきとり専門店</small> 鳥半阪神店</span></h4>
+							<p class="homeShopBox__shopAddress">兵庫県西宮市六湛寺町15-3</p>
+				    		<table class="homeShopBox__information">
+				    			<tr>
+					    			<th>電話番号</th>
+					    			<td>0798-35-7683</td>
+				    			</tr>
+				    			<tr>
+					    			<th>営業時間</th>
+					    			<td>17:00 - 23:45</td>
+				    			</tr>
+				    			<tr>
+					    			<th>定休日</th>
+					    			<td>年末年始</td>
+				    			</tr>
+				    		</table>
+						</a><!-- /.homeShopBox__shop --></div>
+				    </div>
+				<!-- /.row --></div>
+				<p>急なお休みをいただく場合が有ります。ご来店の際は店舗にご確認ください。</p>
+			<!-- /.homeShopBox --></div>
+        <!-- /.inBase --></div>
+
+
+		<div class="homeRecruitBox sM-l --typeScrollFadeIn">
+			<div class="inBase clearfix">
+				<figure class="homeRecruitBox__image">
+					<img src="img/home/bgRecruit.jpg" alt="採用情報" class="isPC" />
+					<img src="img/home/bgRecruit_sp.jpg" alt="採用情報" class="isSP" />
+				</figure>
+				<div class="homeRecruitBox__content">
+					<div class="homeRecruitBox__inner">
+						<div class="homeRecruitBox__titleBox sM">
+							<h3 class="homeRecruitBox__title">
+								<span>採用情報</span>
+								<small>Recruit Information</small>
+							</h3>
+						<!-- /.homeRecruitBox__titleBox --></div>
+						<p class="homeRecruitBox__sentence sM-l">
+							仕事を選ぶのは、本当に大切な選択です！<br>
+							仕事選びの大切なポイントは、どんな仲間と何を成し遂げていくかだと考えています。<br>
+							私たちはスタッフ全員で力を合わせて、目標達成の喜びを分かち合う会社づくりをしています。<br>
+							ぜひ仲間になって、共に超飲食グループを実現しませんか！
+						</p>
+						<div class="homeRecruitBox__button">
+							<div class="button--type03"><a href="#">正社員募集</a></div>
+							<div class="button--type03"><a href="#">アルバイト募集</a></div>
+						<!-- /.homeWillBox__button --></div>
+					<!-- /.homeRecruitBox__inner --></div>
+				<!-- /.homeRecruitBox__content --></div>
+        	<!-- /.inBase --></div>
+		<!-- /.homeRecruitBox --></div>
+
+		<div class="inBase clearfix">
+			<div class="homeNewsBox clearfix sM-l --typeScrollFadeIn">
+				<h3 class="homeNewsBox__title">
+					<span>お知らせ</span>
+					<small>Information</small>
+				</h3>
+				<div class="homeNewsBox__content">
+					<ul>
+						<li><a href="#"><span>2023.0.0</span><span>タイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトル</span></a></li>
+						<li><a href="#"><span>2023.0.0</span><span>タイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトル</span></a></li>
+						<li><a href="#"><span>2023.0.0</span><span>タイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトル</span></a></li>
+					</ul>
+				<!-- /.homeNewsBox__content --></div>
+				<div class="homeNewsBox__button">
+					<div class="button--type01"><a href="<?php echo home_url(); ?>/p_news">すべてみる</a></div>
+				</div>
+			<!-- /.homeNewsBox --></div>
+
+			<div class="homeFaceBookBnner sM-l --typeScrollFadeIn">
+				<figure class="homeFaceBookBnner__image"><img src="img/home/imgFacebookBanner.jpg" alt="ふじや丸の航海日誌" /></figure>
+				<div class="homeFaceBookBnner__button"><a href="https://www.facebook.com/people/%E3%81%B5%E3%81%98%E3%82%84%E3%82%B0%E3%83%AB%E3%83%BC%E3%83%97%E3%81%AE%E6%8C%91%E6%88%A6/100063644525468/">公式Facebookはこちら</a></div>
+			<!-- /.homeFaceBookBnner --></div>
+
+			<div class="homeInstagramBox sM-l --typeScrollFadeIn">
+				<h3 class="homeInstagramBox__title sM">各店舗 公式Instagram</h3>
+				<div class="homeInstagramBox__inner">
+
+
+
+
+
+
+<!-- スライダーここから -->
+<div class="sliderBox--typeChangeSlide">
+<!-- Slider全体のコンテナ -->
+<div class="swiper">
+    <!-- Sliderの内包コンテナ -->
+    <div class="swiper-wrapper">
+        <!-- Slideさせたいコンテンツ -->
+        <div class="swiper-slide">
+					<div class="homeInstagramBox__shop">
+						<p class="homeInstagramBox__name"><span>居酒屋ふじや本店</span></p>
+						<div class="homeInstagramBox__instagram"><a href="https://www.instagram.com/fujiya1933/">
+							<div class="homeInstagramBox__headBox">
+								<div class="homeInstagramBox__headName"><figure><img src="img/home/insta_icon_fujiya.png" alt="居酒屋ふじや本店" /></figure><span>fujiya1933</span></div>
+								<span class="homeInstagramBox__headEllipsis"><i class="fa fa-fw icon-ellipsis-h"></i></span>
+							<!-- /.homeInstagramBox__headBox --></div>
+							<figure class="homeInstagramBox__headImage">
+								<img src="img/home/insta_img01.jpg" alt="" />
+							<!-- /.homeInstagramBox__headImage --></figure>
+							<div class="homeInstagramBox__footBox clearfix">
+								<span><img src="img/home/insta_icon_heart.svg" alt="" /></span>
+								<span><img src="img/home/insta_icon_fukidashi.svg" alt="" /></span>
+								<span><img src="img/home/insta_icon_mail.svg" alt="" /></span>
+								<span><img src="img/home/insta_icon_bookmark.svg" alt="" /></span>
+							<!-- /.homeInstagramBox__footBox --></div>
+						</a><!-- /.homeInstagramBox__instagram --></div>
+					<!-- /.homeInstagramBox__shop --></div>
+        <!-- /.swiper-slide --></div>
+
+        <div class="swiper-slide">
+					<div class="homeInstagramBox__shop">
+						<p class="homeInstagramBox__name"><span>炭火と酒 千本鶏</span></p>
+						<div class="homeInstagramBox__instagram"><a href="https://www.instagram.com/senbondori665355/">
+							<div class="homeInstagramBox__headBox">
+								<div class="homeInstagramBox__headName"><figure><img src="img/home/insta_icon_senbondori.png" alt="炭火と酒 千本鶏" /></figure><span>senbondori665355</span></div>
+								<span class="homeInstagramBox__headEllipsis"><i class="fa fa-fw icon-ellipsis-h"></i></span>
+							<!-- /.homeInstagramBox__headBox --></div>
+							<figure class="homeInstagramBox__headImage">
+								<img src="img/home/insta_img02.jpg" alt="" />
+							<!-- /.homeInstagramBox__headImage --></figure>
+							<div class="homeInstagramBox__footBox clearfix">
+								<span><img src="img/home/insta_icon_heart.svg" alt="" /></span>
+								<span><img src="img/home/insta_icon_fukidashi.svg" alt="" /></span>
+								<span><img src="img/home/insta_icon_mail.svg" alt="" /></span>
+								<span><img src="img/home/insta_icon_bookmark.svg" alt="" /></span>
+							<!-- /.homeInstagramBox__footBox --></div>
+						</a><!-- /.homeInstagramBox__instagram --></div>
+					<!-- /.homeInstagramBox__shop --></div>
+        <!-- /.swiper-slide --></div>
+
+        <div class="swiper-slide">
+
+					<div class="homeInstagramBox__shop">
+						<p class="homeInstagramBox__name"><small>アイリッシュカフェ＆レストラン</small><span>カプリシカ</span></p>
+						<div class="homeInstagramBox__instagram"><a href="https://www.instagram.com/capalluisce1759/">
+							<div class="homeInstagramBox__headBox">
+								<div class="homeInstagramBox__headName"><figure><img src="img/home/insta_icon_capalluisce.png" alt="カプリシカ" /></figure><span>capalluisce1759</span></div>
+								<span class="homeInstagramBox__headEllipsis"><i class="fa fa-fw icon-ellipsis-h"></i></span>
+							<!-- /.homeInstagramBox__headBox --></div>
+							<figure class="homeInstagramBox__headImage">
+								<img src="img/home/insta_img03.jpg" alt="" />
+							<!-- /.homeInstagramBox__headImage --></figure>
+							<div class="homeInstagramBox__footBox clearfix">
+								<span><img src="img/home/insta_icon_heart.svg" alt="" /></span>
+								<span><img src="img/home/insta_icon_fukidashi.svg" alt="" /></span>
+								<span><img src="img/home/insta_icon_mail.svg" alt="" /></span>
+								<span><img src="img/home/insta_icon_bookmark.svg" alt="" /></span>
+							<!-- /.homeInstagramBox__footBox --></div>
+						</a><!-- /.homeInstagramBox__instagram --></div>
+					<!-- /.homeInstagramBox__shop --></div>
+
+        <!-- /.swiper-slide --></div>
+
+        <div class="swiper-slide">
+
+					<div class="homeInstagramBox__shop">
+						<p class="homeInstagramBox__name"><small>やきとり専門店</small><span>鳥半本店</span></p>
+						<div class="homeInstagramBox__instagram"><a href="https://www.instagram.com/torihanhonten/">
+							<div class="homeInstagramBox__headBox">
+								<div class="homeInstagramBox__headName"><figure><img src="img/home/insta_icon_horihanhonten.png" alt="鳥半本店" /></figure><span>torihanhonten</span></div>
+								<span class="homeInstagramBox__headEllipsis"><i class="fa fa-fw icon-ellipsis-h"></i></span>
+							<!-- /.homeInstagramBox__headBox --></div>
+							<figure class="homeInstagramBox__headImage">
+								<img src="img/home/insta_img04.jpg" alt="" />
+							<!-- /.homeInstagramBox__headImage --></figure>
+							<div class="homeInstagramBox__footBox clearfix">
+								<span><img src="img/home/insta_icon_heart.svg" alt="" /></span>
+								<span><img src="img/home/insta_icon_fukidashi.svg" alt="" /></span>
+								<span><img src="img/home/insta_icon_mail.svg" alt="" /></span>
+								<span><img src="img/home/insta_icon_bookmark.svg" alt="" /></span>
+							<!-- /.homeInstagramBox__footBox --></div>
+						</a><!-- /.homeInstagramBox__instagram --></div>
+					<!-- /.homeInstagramBox__shop --></div>
+        	
+        <!-- /.swiper-slide --></div>
+
+        <div class="swiper-slide">
+					<div class="homeInstagramBox__shop">
+						<p class="homeInstagramBox__name"><small>やきとり専門店</small><span>鳥半阪神店</span></p>
+						<div class="homeInstagramBox__instagram"><a href="https://www.instagram.com/torihanhanshinten/">
+							<div class="homeInstagramBox__headBox">
+								<div class="homeInstagramBox__headName"><figure><img src="img/home/insta_icon_horihanhanshinten.png" alt="鳥半阪神店" /></figure><span>torihanhanshinten</span></div>
+								<span class="homeInstagramBox__headEllipsis"><i class="fa fa-fw icon-ellipsis-h"></i></span>
+							<!-- /.homeInstagramBox__headBox --></div>
+							<figure class="homeInstagramBox__headImage">
+								<img src="img/home/insta_img05.jpg" alt="" />
+							<!-- /.homeInstagramBox__headImage --></figure>
+							<div class="homeInstagramBox__footBox clearfix">
+								<span><img src="img/home/insta_icon_heart.svg" alt="" /></span>
+								<span><img src="img/home/insta_icon_fukidashi.svg" alt="" /></span>
+								<span><img src="img/home/insta_icon_mail.svg" alt="" /></span>
+								<span><img src="img/home/insta_icon_bookmark.svg" alt="" /></span>
+							<!-- /.homeInstagramBox__footBox --></div>
+						</a><!-- /.homeInstagramBox__instagram --></div>
+					<!-- /.homeInstagramBox__shop --></div>
+        	
+        <!-- /.swiper-slide --></div>
+
+
+
+    <!-- /.swiper-wrapper --></div>
+    <!-- ナビゲーションボタン（※省略可） -->
+    <!--<div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>-->
+
+<!-- /.swiper --></div>
+<!-- Sliderここまで -->
+<!-- /.sliderBox--typeChangeSlide --></div>
+<!-- スライダーここまで -->
+
+				<!-- /.homeInstagramBox__inner --></div>
+			<!-- /.homeInstagramBox --></div>
+        <!-- /.inBase --></div>
+
+
+		<div class="homeBlogBox --typeScrollFadeIn">
+			<div class="inBase clearfix is--noHidden">
+				<h3 class="homeBlogBox__title sM-l">
+					<span>ブログ</span>
+					<small>BLOG</small>
+				</h3>
+
+				<div class="homeBlogBox__inner sM-l">
+
+
+
+
+
+
+<!-- スライダーここから -->
+<div class="sliderBox--typeChangeSlide02">
+<!-- Slider全体のコンテナ -->
+<div class="swiper">
+    <!-- Sliderの内包コンテナ -->
+    <div class="swiper-wrapper">
+        <!-- Slideさせたいコンテンツ -->
+        <div class="swiper-slide">
+							<div class="homeBlogBox__blog"><a href="">
+								<figure class="homeBlogBox__image"><img src="img/home/imgSample.jpg" alt="" /></figure>
+								<div class="homeBlogBox__info">
+									<p class="homeBlogBox__date">23/0/0</p>
+									<p class="homeBlogBox__newsTitle">タイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトル</p>
+								<!-- /.homeBlogBox__info --></div>
+			        		</a><!-- /.homeBlogBox__blog --></div>
+        <!-- /.swiper-slide --></div>
+
+        <div class="swiper-slide">
+							<div class="homeBlogBox__blog"><a href="">
+								<figure class="homeBlogBox__image"><img src="img/home/imgSample.jpg" alt="" /></figure>
+								<div class="homeBlogBox__info">
+									<p class="homeBlogBox__date">23/0/0</p>
+									<p class="homeBlogBox__newsTitle">タイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトル</p>
+								<!-- /.homeBlogBox__info --></div>
+			        		</a><!-- /.homeBlogBox__blog --></div>
+        <!-- /.swiper-slide --></div>
+
+        <div class="swiper-slide">
+							<div class="homeBlogBox__blog"><a href="">
+								<figure class="homeBlogBox__image"><img src="img/home/imgSample.jpg" alt="" /></figure>
+								<div class="homeBlogBox__info">
+									<p class="homeBlogBox__date">23/0/0</p>
+									<p class="homeBlogBox__newsTitle">タイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトル</p>
+								<!-- /.homeBlogBox__info --></div>
+			        		</a><!-- /.homeBlogBox__blog --></div>
+        <!-- /.swiper-slide --></div>
+
+        <div class="swiper-slide">
+							<div class="homeBlogBox__blog"><a href="">
+								<figure class="homeBlogBox__image"><img src="img/home/imgSample.jpg" alt="" /></figure>
+								<div class="homeBlogBox__info">
+									<p class="homeBlogBox__date">23/0/0</p>
+									<p class="homeBlogBox__newsTitle">タイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトル</p>
+								<!-- /.homeBlogBox__info --></div>
+			        		</a><!-- /.homeBlogBox__blog --></div>
+        <!-- /.swiper-slide --></div>
+
+
+
+    <!-- /.swiper-wrapper --></div>
+    <!-- ナビゲーションボタン（※省略可） -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+
+<!-- /.swiper --></div>
+<!-- Sliderここまで -->
+<!-- /.sliderBox--typeChangeSlide02 --></div>
+<!-- スライダーここまで -->
+
+
+
+		        <!-- /.homeBlogBox__inner --></div>
+
+				<div class="button--type02 tC"><a href="<?php echo home_url(); ?>/blog">記事一覧</a></div>
+            
+        	<!-- /.inBase --></div>
+        <!-- /.homeBlogBox --></div>
+
+
+
+        
+	<!-- /#contents --></div>
+
+	
+	<footer id="footer" class="--typeScrollFadeIn">
+		<div class="inBase clearfix">
+        	<div class="row">
+            	<div class="col-12 col-md-8 offset-md-2 sM">
+	           		<dl class="footer__information">
+						<dt class="footer__information__siteTitle">
+							<img src="img/common/siteTitle_w.svg" alt="ふじやグループ -SINCE1933-" class="isPC" />
+							<img src="img/common/siteTitle_o2.svg" alt="ふじやグループ -SINCE1933-" class="isSP" />
+						</dt>
+						<!--<dd class="footer__information__sent">〒662-0832<br>
+						兵庫県西宮市甲風園1丁目5-18 スギモトビル3F</dd> -->
+					</dl>
+                <!-- /.col --></div>
+            	<div class="col-12 col-md-8 offset-md-3 sM">
+            		<div class="footer__navi clearfix">
+            			<div class="footer__navi__inner">
+							<ul>
+								<li class="--type01 --noLink"><a href="<?php echo home_url(); ?>/about">ふじやグループについて</a></li>
+								<li><a href="<?php echo home_url(); ?>/about">ふじやグループとは</a></li>
+								<li><a href="<?php echo home_url(); ?>/about/guest">お客様へ</a></li>
+								<li><a href="<?php echo home_url(); ?>/about/staff">スタッフへ</a></li>
+					            <li><a href="<?php echo home_url(); ?>/about/client">お取引様へ</a></li>
+					            <li><a href="<?php echo home_url(); ?>/about/introduction">スタッフ紹介</a></li>
+							</ul>
+							<ul>
+								<li class="--type01 --noLink"><a href="<?php echo home_url(); ?>/information">企業情報</a></li>
+								<li><a href="<?php echo home_url(); ?>/information/service">事業内容</a></li>
+								<li><a href="<?php echo home_url(); ?>/information/idea">経営理念・ビジョン</a></li>
+					            <li><a href="<?php echo home_url(); ?>/information/message">社長・専務メッセージ</a></li>
+					            <li><a href="<?php echo home_url(); ?>/information/company">会社概要</a></li>
+					            <li><a href="<?php echo home_url(); ?>/">ふじや動画集</a></li>
+							</ul>
+                		<!-- /.footer__navi__inner --></div>
+            			<div class="footer__navi__inner">
+							<ul class="regulation-sp">
+								<li class="--type01"><a href="<?php echo home_url(); ?>/shop">店舗紹介</a></li>
+							</ul>
+							<ul>
+								<li class="--type01 --noLink"><a href="<?php echo home_url(); ?>/recruit">採用情報</a></li>
+								<li><a href="<?php echo home_url(); ?>/recruit">正社員募集</a></li>
+								<li><a href="<?php echo home_url(); ?>/parttime">アルバイト募集</a></li>
+							</ul>
+							<ul class="isSP">
+								<li class="--type01"><a href="<?php echo home_url(); ?>/p_news">お知らせ</a></li>
+								<li class="--type01"><a href="<?php echo home_url(); ?>/blog">ブログ</a></li>
+								<li class="--type01"><a href="<?php echo home_url(); ?>/policy">プライバシーポリシー</a></li>
+							</ul>
+                		<!-- /.footer__navi__inner --></div>
+                	<!-- /.footer__navi --></div>
+                <!-- /.col --></div>
+            <!-- /.row --></div>
+            <div class="footer__bottom">
+	        	<div class="row">
+	            	<div class="col-12 col-md-6 sM">
+		           		<small class="copyright">&copy; 2023 株式会社クワタ  All Rights Reserved.</small>
+	                <!-- /.col --></div>
+	            	<div class="col-12 col-md-6 sM">
+	            		<div class="footer__navi">
+							<ul>
+								<li class="--type01"><a href="<?php echo home_url(); ?>/p_news">お知らせ</a></li>
+								<li class="--type01"><a href="<?php echo home_url(); ?>/blog">ブログ</a></li>
+					            		<li class="--type01"><a href="<?php echo home_url(); ?>/policy">プライバシーポリシー</a></li>
+							</ul>
+	                	<!-- /.footer__navi --></div>
+	                <!-- /.col --></div>
+	            <!-- /.row --></div>
+			<!-- /.footer__bottom --></div>
+		<!-- /.inBase --></div>
+	<!-- /#footer --></footer>
+
+	
+        
+	<p id="btnRise"><a href="#wrapper"><img src="img/common/btnRise.png" alt="ページ上部に戻る" /></a></p>
+	  
+	<div id="btnTelEmpty"></div>
+    
+	    <div id="btnPageBottom">
+	        <div class="btnPageBottom--btn btnPageBottom--type01">
+	        	<div class="btnPageBottom--type01__inner">
+		            <a class="clearfix" href="#">
+		                <p class="btnPageBottom--type01__btnSent">正社員募集</p>
+		            </a>
+		            <a class="clearfix" href="#">
+		                <p class="btnPageBottom--type01__btnSent">アルバイト募集</p>
+		            </a>
+		            <a class="clearfix" href="<?php echo home_url(); ?>/shop">
+		                <p class="btnPageBottom--type01__btnSent">店舗一覧</p>
+		            </a>
+	            <!-- /.btnPageBottom--type01__inner --></div>
+	        <!-- /.btnPageBottom--btn --></div>
+	    <!-- /#btnPageBottom --></div>
+<!-- /#wrapper --></div>
+
+</body>
+</html>
+
+<script data-main="js/main" src="js/require.js"></script>

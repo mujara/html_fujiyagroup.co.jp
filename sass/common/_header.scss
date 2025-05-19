@@ -1,0 +1,46 @@
+@use "../_setting" as s;
+
+#header {
+	position: relative;
+    	transition: .3s;
+}
+
+.header {
+    &__siteTitleBox {
+		display:block;
+		width:50%;
+		margin-left:auto;
+		margin-right:auto;
+		padding:0.6em 0;
+		position: relative;
+		@include s.media(m){
+			width:24%;
+			vertical-align:middle;
+			padding-top:1.6em;
+			padding-bottom:0;
+			margin-left:0;
+			margin-right:0;
+			float:left;
+		}
+		&::before{
+			content:"";
+			width:3.5em;
+			height:5em;
+			background: url(../img/common/imgShip.png) no-repeat center top;
+			background-size:100% auto;
+			display:block;
+			position:absolute;
+			top:0.3em;
+			left:-5em;
+			@include s.media(m){
+				content:none;
+			}
+		}
+		a{
+			display:block;
+		}
+		.header__siteTitle img{
+			width:100%;
+		}
+	}
+}

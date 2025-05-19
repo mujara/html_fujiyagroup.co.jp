@@ -1,0 +1,160 @@
+@use "../_setting" as s;
+
+#footer {
+	background:s.$colorType03;
+	padding:3em 0 0 0;
+	clear: both;
+	@include s.media(m){
+		padding:6em 0 0 0;
+	}
+}
+
+
+.footer__information {
+	text-align:center;
+
+	&__siteTitle{
+		padding:0 15% 1em 15%;
+		margin-bottom:1em;
+		@include s.media(m){
+			width:20.8em;
+			margin-bottom:3em;
+			padding:0;
+			margin-left:auto;
+			margin-right:auto;
+		}
+	}
+	&__siteTitle img{
+		width:100%;
+	}
+	&__sent {
+	font-size:0.8em;
+	font-family: 'Noto Sans JP', sans-serif;
+	font-weight:400;
+	color:#FFF;
+	margin-bottom:1em;
+		@include s.media(m){
+			font-size:1em;
+			text-align:left;
+			line-height:2.5;
+		}
+	}
+}
+
+
+#footer .footer__navi {
+	width:100%;
+	border-top:#a8927e solid 1px;
+	padding-top:3em;
+	display:block;
+	@include s.media(m){
+		border-top:none;
+		padding-top:1em;
+	}
+	&__inner{
+		width:50%;
+		float:left;
+		@include s.media(m){
+			border-bottom:none;
+			width:100%;
+			display:flex;
+			flex-wrap:wrap;
+			float:none;
+		}
+		&:nth-child(1){
+			padding-right:1em;
+			@include s.media(m){
+				padding-right:0;
+			}
+		}
+		&:nth-child(2){
+			padding-left:1em;
+			@include s.media(m){
+				padding-left:0;
+			}
+		}
+	}
+	ul{
+		margin-bottom:1.5em;
+		@include s.media(m){
+			width:50%;
+			margin-bottom:3em;
+		}
+		&.isSP{
+			display:block;
+			@include s.media(m){
+				display:none;
+			}
+		}
+		&.regulation-sp{
+			margin-bottom:2em;
+			@include s.media(m){
+				margin-bottom:3em;
+			}
+		}
+	}
+	li{
+		padding:5px 0;
+		@include s.media(m){
+			padding:0 0 5px;
+		}
+		&.--type01{
+			a{
+				font-family: "I-OTF-G新ゴシックPro B";
+				font-weight:bold;
+				color:s.$colorType02;
+			}
+		}
+		a{
+			font-family: "I-OTF新ゴシックPro R";
+			color:#FFF;
+			text-decoration:none;
+			@include s.media(m){
+				font-size:1.1em;
+			}
+			&:hover {
+				color: s.$colorType02;
+			}
+		}
+	}
+}
+
+#footer .footer__bottom{
+	display:block;
+	padding:1em 0 0 0;
+	@include s.media(m){
+		border-top:#FFF solid 1px;
+		padding:2em 0 0 0;
+	}
+	.footer__navi{
+		display:none;
+		border-bottom:none;
+		@include s.media(m){
+			display:block;
+		}
+		ul{
+			width:100%;
+			display:flex;
+			justify-content:center;
+			@include s.media(m){
+				display:flex;
+				justify-content:flex-start;
+				margin-bottom:1em;
+			}
+			li{
+				padding-left:0;
+				padding:1em 1em 0 1em;
+				@include s.media(m){
+					margin-right:2em;
+					padding:0 0 5px;
+				}
+			}
+		}
+	}
+}
+
+
+
+
+
+

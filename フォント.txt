@@ -1,0 +1,34 @@
+
+フォントプラス　https://fontplus.jp
+<script src="https://webfont.fontplus.jp/accessor/script/fontplus.js?gUwfYWZ-iOk%3D&box=aVkPVMJgt3M%3D&aa=1&ab=2"></script>
+
+◾️イワタ新ゴシック体R  
+font-family: "I-OTF新ゴシックPro R";
+
+◾️イワタ新ゴシック体B
+font-family: "I-OTF-G新ゴシックPro B";
+
+
+Googleフォント
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&family=Kaisei+Tokumin:wght@500;700;800&family=Lato:wght@900&family=Noto+Sans+JP:wght@200;400;500;800;900&family=Shippori+Mincho:wght@700&display=swap" rel="stylesheet">
+
+◾️Noto Sans Japanese
+font-family: 'Noto Sans JP', sans-serif;
+
+◾️Kaisei Tokumin
+font-family: 'Kaisei Tokumin', serif;
+
+◾️Lato
+font-family: 'Lato', sans-serif;
+
+
+経営理念で追加
+◾️EB Garamond
+font-family: 'EB Garamond', serif;
+font-weight:500;
+
+◾️Shippori Mincho
+font-family: 'Shippori Mincho', serif;
+font-weight:700;

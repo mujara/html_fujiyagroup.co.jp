@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head prefix="og: http://ogp.me/ns">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,user-scalable=no,maximum-scale=1" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="keywords" content="●サイトの検索キーワード●" />
+<meta name="description" content="●サイトの検索説明●" />
+<title>●サイトのタイトル●</title>
+<meta property="og:url" content="●ページの URL●" />
+<meta property="og:type" content="●ページの種類●website article" />
+<meta property="og:title" content="●ページの タイトル●" />
+<meta property="og:description" content="●ページの説明文●" />
+<meta property="og:site_name" content="●サイト名●" />
+<meta property="og:image" content="●サムネイル画像のURL●" />
+<meta name="apple-mobile-web-app-title" content="●iOS表示名●" />
+<meta name="author" content="●作者名●" />
+<link rel="apple-touch-icon" href="iphone.png">
+<link rel="stylesheet" href="css/import.css" media="all" />
+
+<!-- Googleフォント -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&family=Kaisei+Tokumin:wght@500;700;800&family=Lato:wght@900&family=Noto+Sans+JP:wght@200;400;500;800;900&family=Shippori+Mincho:wght@700&display=swap" rel="stylesheet">
+<!-- フォントプラス -->
+<script src="https://webfont.fontplus.jp/accessor/script/fontplus.js?gUwfYWZ-iOk%3D&box=aVkPVMJgt3M%3D&aa=1&ab=2"></script>
+
+</head>
+
+<body class="page">
+
+
+<div id="wrapper">
+	<header id="header" class="clearfix">
+		<!--<div id="pageTopFix">-->
+			<div class="inBase clearfix">
+				<div class="header__siteTitleBox">
+					<h1 class="header__siteTitle"><a href="<?php echo home_url(); ?>"><img src="img/common/siteTitle.svg" alt="ふじやグループ -SINCE1933-" /></a></h1>
+				<!-- /.header__siteTitleBox --></div>
+
+				<nav class="globalNavi">
+					<ul class="globalNavi__menu__main clearfix">
+						<li><a href="<?php echo home_url(); ?>/about"><figure><img src="img/common/naviIconGroup.png" alt="ふじやグループについて" /></figure><span>ふじやグループについて</span></a>
+				            <ul class="globalNavi__menu__sub">
+								<li><a href="<?php echo home_url(); ?>/about/guest">お客様へ</a></li>
+								<li><a href="<?php echo home_url(); ?>/about/staff">スタッフへ</a></li>
+								<li><a href="<?php echo home_url(); ?>/about/client">お取引先様へ</a></li>
+								<li><a href="<?php echo home_url(); ?>/about/introduction">スタッフ紹介</a></li>
+							</ul> 
+			            </li>
+						<li><a href="<?php echo home_url(); ?>/information"><figure><img src="img/common/naviIconCompany.png" alt="企業情報" /></figure><span>企業情報</span></a>
+				            <ul class="globalNavi__menu__sub">
+								<li><a href="<?php echo home_url(); ?>/information/idea">経営理念・ビジョン</a></li>
+								<li><a href="<?php echo home_url(); ?>/information/message">社長・専務メッセージ</a></li>
+								<li><a href="<?php echo home_url(); ?>/information/service">事業内容</a></li>
+								<li><a href="<?php echo home_url(); ?>/information/company">会社概要</a></li>
+								<li><a href="<?php echo home_url(); ?>/">ふじや動画集</a></li>
+							</ul> 
+			            </li>
+						<li><a href="<?php echo home_url(); ?>/shop"><figure><img src="img/common/naviIconShop.png" alt="店舗紹介" /></figure><span>店舗紹介</span></a></li>
+						<li><a href="<?php echo home_url(); ?>/recruit"><figure><img src="img/common/naviIconRecruit.png" alt="採用情報" /></figure><span>採用情報</span></a></li>
+					</ul>
+			    <!-- /.globalNavi --></nav>
+			<!-- /.inBase --></div>
+		<!-- /#pageTopFix --</div>-->
+		
+			<nav class="globalNaviSmall">
+				<div id="globalNaviSmallIcon" class="globalNaviSmall__icon globalNaviSmall__icon--type01">
+					<div class="globalNaviSmall__iconButton">
+						<span class="iconButton--top"></span>
+						<span class="iconButton--middle"></span>
+						<span class="iconButton--bottom"></span>
+					</div>
+				</div>
+
+				<div class="modal micromodal-slide" id="modal-globalNaviSmall" aria-hidden="true">
+					<div class="modal__overlay" tabindex="-1" data-micromodal-close>
+				    		<div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-globalNaviSmall-labelledby">
+
+							<div class="globalNaviSmall__menu" id="modal-globalNaviSmall-labelledby">
+								<div class="globalNaviSmall__menu__inner">
+									<div class="globalNaviSmall__menu__main">
+										<div class="globalNaviSmall__menu__head">
+											<div class="globalNaviSmall__menu__siteTitle"><img src="img/common/siteTitle.svg" alt="ふじやグループ -SINCE1933-" /></div>
+											<p>〒662-0832<br>
+												兵庫県西宮市甲風園1丁目5-18 スギモトビル3F</p>
+											<div class="globalNaviSmall__menu__headButton"><a href="<?php echo home_url(); ?>">ホーム</a><!-- /.globalNaviSmall__menu__headButton --></div>
+										<!-- /.globalNaviSmall__menu__head --></div>
+
+										<div class="globalNaviSmall__menu__buttonGroupBox">
+											<div class="globalNaviSmall__menu__buttonGroup"><a href="<?php echo home_url(); ?>/about">
+												<figure><img src="img/common/naviIconGroup.png" alt="ふじやグループについて" /></figure>
+												<span>ふじやグループについて</span>
+											</a><!-- /.globalNaviSmall__menu__buttonGroup --></div>
+											<ul>
+												<li><a href="<?php echo home_url(); ?>/about/guest">お客様へ</a></li>
+												<li><a href="<?php echo home_url(); ?>/about/staff">スタッフへ</a></li>
+												<li><a href="<?php echo home_url(); ?>/about/client">お取引先様へ</a></li>
+												<li><a href="<?php echo home_url(); ?>/about/introduction">スタッフ紹介</a></li>
+											</ul> 
+										<!-- /.globalNaviSmall__menu__buttonGroupBox --></div>
+										<ul class="globalNaviSmall__menu__buttonList">
+											<li><a href="<?php echo home_url(); ?>/information"><figure><img src="img/common/naviIconCompany.png" alt="企業情報" /></figure><span>企業情報</span></a></li>
+											<li><a href="<?php echo home_url(); ?>/shop"><figure><img src="img/common/naviIconShop.png" alt="店舗紹介" /></figure><span>店舗紹介</span></a></li>
+											<li><a href="<?php echo home_url(); ?>/recruit"><figure><img src="img/common/naviIconRecruit.png" alt="採用情報" /></figure><span>採用情報</span></a></li>
+										</ul>
+									<!-- /.globalNaviSmall__menu__main --></div>
+								<!-- /.globalNaviSmall__menu__inner --></div>
+							<!-- /.globalNaviSmall__menu --></div>
+
+				    		<!-- /.modal__container --></div>
+					<!-- /.modal__overlay --></div>
+				<!-- /#modal-globalNaviSmall --></div>
+		    <!-- /.globalNaviSmall --></nav>
+
+		    
+	<!-- /#header --></header>
+    
+    <div class="pageTitleBox sM-s">
+	<div class="pageTitle">
+		<div class="inBase clearfix">
+			<h1>経営理念</h1>
+		<!-- /.inBase --></div>
+	<!-- /.pageTitle --></div>
+    <!-- /.pageTitleBox --></div>
+	
+	<div id="contents" class="clearfix"><div class="article">
+		<div class="inBase clearfix">
+			<div class="topicpath sM">
+				<ul>
+				    <li><a href="index.html">ホーム</a></li>
+				    <li>経営理念</li>
+				</ul>
+			<!-- /.topicpath --></div>
+
+
+			<div class="box--type01 sM-l">
+				<p class="title--type01 sM"><span>Management Philosophy</span></p>
+				<h3 class="box--type01__lead01">わたしたちは、<br>「超飲食グループ」と「幸せ集団」を実現します。</h3>
+			<!-- /.box--type01 --></div>
+
+			<div class="box--type01 sM-l">
+				<p class="title--type01 sM"><span>Mission Statement</span></p>
+				<h3 class="box--type01__lead01 sM-l">幸せをつなぎ、磨きつづける</h3>
+				<p class="box--type01__sentence01 sM-l">「幸せ」は、今を大切に想うこと<br>
+					「幸せ」は、想いが一つに合さること<br>
+					「幸せ」は、身と心が喜ぶこと</p>
+				<p class="box--type01__sentence02">
+					従業員の幸せが、周囲に感動を伝え、その先へ幸せをつないでいきます。<br>
+					そして、志高い目標を達成し、飲食業界の常識を超えていきます。</p>
+			<!-- /.box--type01 --></div>
+
+			<div class="box--type01 sM-l">
+				<h3 class="title--type02 sM"><span>幸せの木を、共に育てる</span></h3>
+				<h4 class="box--type01__lead02 sM">わたしたちの会社の在り方</h4>
+				<p class="box--type01__sentence03 sM-l">
+					力強く支える木の「根」は、価値観を共有したスタッフたち。ふじやグループの活動源です。<br>
+					太い木の「幹」は幸せを磨き続ける一人一人が、同じ方向に向かって力を合わせ伸びてゆくこと。<br>
+					生い茂る木の「葉」は社会や人々との関わりや繋がり笑顔とありがとうで溢れてゆく様子を示し、<br class="hidden-sp">
+					その先に実る「果実」は日々の実践によって成す物事をあらわします。<br>
+					源をたどると「種子」はこんなに大きく発展する可能性に溢れているのです。<br>
+					未来に向かって成長し続ける「ふじやグループ 幸せの木」を、チーム一丸となって大切に育てて行きます。
+				</p>
+				<figure class="box--type01__image"><img src="img/idea/imgTree.png" alt="わたしたちの会社の在り方" /></figure>
+			<!-- /.box--type01 --></div>
+
+			<div class="box--type01 sM-l">
+				<h3 class="title--type02 sM"><span>幸せな仕事人生をつくろう</span></h3>
+				<h4 class="box--type01__lead02 sM">理念に共感する働き方「全員経営」</h4>
+				<p class="box--type01__sentence03 tC-pc sM-l">
+					個人の幸せと会社の発展は相互に関係しています。<br>
+					人生理念と経営理念を重ね合わせ、共感することが「全員経営」につながり、<br>
+					結果的に双方の幸福度を最大化できると考えています。
+				</p>
+				<figure class="box--type01__image"><img src="img/idea/imgJobLife.png" alt="幸せ集団の実現" /></figure>
+			<!-- /.box--type01 --></div>
+
+			<figure class="bottomFujiyamaru sM-l"><img src="img/home/imgIllustMainVisual.png" alt="ふじや丸" /></figure>
+		<!-- /.inBase --></div>
+	<!-- /.article --></div><!-- /#contents --></div>
+
+	
+
+	<div class="bottomContactBox">
+		<div class="inBase clearfix">
+			<div class="bottomContactBox__titleBox">
+				<h3 class="bottomContactBox__title">採用情報</h3>
+				<p>ふじやグループで一緒に働いてみませんか？</p>
+			<!-- /.bottomContactBox__titleBox --></div>
+			<div class="bottomContactBox__buttonBox">
+				<div class="button--type04"><a href="/recruit">正社員募集</a></div>
+				<div class="button--type04"><a href="/parttime">アルバイト募集</a></div>
+			<!-- /.bottomContactBox__buttonBox --></div>
+		<!-- /.inBase --></div>
+	<!-- /.bottomContactBox --></div>
+
+	
+	<footer id="footer" class="--typeScrollFadeIn">
+		<div class="inBase clearfix">
+        	<div class="row">
+            	<div class="col-12 col-md-6 sM">
+	           		<dl class="footer__information">
+						<dt class="footer__information__siteTitle">
+							<img src="img/common/siteTitle_w.svg" alt="ふじやグループ -SINCE1933-" class="isPC" />
+							<img src="img/common/siteTitle_o2.svg" alt="ふじやグループ -SINCE1933-" class="isSP" />
+						</dt>
+						<dd class="footer__information__sent">〒662-0832<br>
+						兵庫県西宮市甲風園1丁目5-18 スギモトビル3F</dd>
+					</dl>
+                <!-- /.col --></div>
+            	<div class="col-12 col-md-6 sM">
+            		<div class="footer__navi clearfix">
+            			<div class="footer__navi__inner">
+							<ul>
+								<li class="--type01"><a href="<?php echo home_url(); ?>/about">ふじやグループについて</a></li>
+								<li><a href="<?php echo home_url(); ?>/about/guest">お客様へ</a></li>
+								<li><a href="<?php echo home_url(); ?>/about/staff">スタッフへ</a></li>
+					            <li><a href="<?php echo home_url(); ?>/about/client">お取引様へ</a></li>
+					            <li><a href="<?php echo home_url(); ?>/about/introduction">スタッフ紹介</a></li>
+							</ul>
+							<ul>
+								<li class="--type01"><a href="<?php echo home_url(); ?>/information">企業情報</a></li>
+								<li><a href="<?php echo home_url(); ?>/information/service">事業内容</a></li>
+								<li><a href="<?php echo home_url(); ?>/information/idea">経営理念・ビジョン</a></li>
+					            <li><a href="<?php echo home_url(); ?>/information/message">社長・専務メッセージ</a></li>
+					            <li><a href="<?php echo home_url(); ?>/information/company">会社概要</a></li>
+					            <li><a href="<?php echo home_url(); ?>/">ふじや動画集</a></li>
+							</ul>
+                		<!-- /.footer__navi__inner --></div>
+            			<div class="footer__navi__inner">
+							<ul class="regulation-sp">
+								<li class="--type01"><a href="<?php echo home_url(); ?>/shop">店舗紹介</a></li>
+							</ul>
+							<ul>
+								<li class="--type01"><a href="<?php echo home_url(); ?>/recruit">採用情報</a></li>
+								<li><a href="<?php echo home_url(); ?>/recruit">正社員募集</a></li>
+								<li><a href="<?php echo home_url(); ?>/parttime">アルバイト募集</a></li>
+							</ul>
+							<ul class="isSP">
+								<li class="--type01"><a href="<?php echo home_url(); ?>/p_news">お知らせ</a></li>
+								<li class="--type01"><a href="<?php echo home_url(); ?>/blog">ブログ</a></li>
+								<li class="--type01"><a href="<?php echo home_url(); ?>/policy">プライバシーポリシー</a></li>
+							</ul>
+                		<!-- /.footer__navi__inner --></div>
+                	<!-- /.footer__navi --></div>
+                <!-- /.col --></div>
+            <!-- /.row --></div>
+            <div class="footer__bottom">
+	        	<div class="row">
+	            	<div class="col-12 col-md-6 sM">
+		           		<small class="copyright">&copy; 2023 株式会社クワタ  All Rights Reserved.</small>
+	                <!-- /.col --></div>
+	            	<div class="col-12 col-md-6 sM">
+	            		<div class="footer__navi">
+							<ul>
+								<li class="--type01"><a href="<?php echo home_url(); ?>/p_news">お知らせ</a></li>
+								<li class="--type01"><a href="<?php echo home_url(); ?>/blog">ブログ</a></li>
+					            		<li class="--type01"><a href="<?php echo home_url(); ?>/policy">プライバシーポリシー</a></li>
+							</ul>
+	                	<!-- /.footer__navi --></div>
+	                <!-- /.col --></div>
+	            <!-- /.row --></div>
+			<!-- /.footer__bottom --></div>
+		<!-- /.inBase --></div>
+	<!-- /#footer --></footer>
+
+	
+        
+	<p id="btnRise"><a href="#wrapper"><img src="img/common/btnRise.png" alt="ページ上部に戻る" /></a></p>
+	  
+	<div id="btnTelEmpty"></div>
+    
+	    <div id="btnPageBottom">
+	        <div class="btnPageBottom--btn btnPageBottom--type01">
+	        	<div class="btnPageBottom--type01__inner">
+		            <a class="clearfix" href="#">
+		                <p class="btnPageBottom--type01__btnSent">正社員募集</p>
+		            </a>
+		            <a class="clearfix" href="#">
+		                <p class="btnPageBottom--type01__btnSent">アルバイト募集</p>
+		            </a>
+		            <a class="clearfix" href="<?php echo home_url(); ?>/shop">
+		                <p class="btnPageBottom--type01__btnSent">店舗一覧</p>
+		            </a>
+	            <!-- /.btnPageBottom--type01__inner --></div>
+	        <!-- /.btnPageBottom--btn --></div>
+	    <!-- /#btnPageBottom --></div>
+<!-- /#wrapper --></div>
+
+</body>
+</html>
+
+<script data-main="js/main" src="js/require.js"></script>
